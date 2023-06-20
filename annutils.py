@@ -9,6 +9,9 @@ import joblib
 
 import pandas as pd
 import numpy as np
+
+import os
+
 # viz
 # import hvplot.pandas
 # import holoviews as hv
@@ -48,6 +51,19 @@ def create_antecedent_inputs(df,ndays=8,window_size=11,nwindows=10):
     dfr=df.rolling(str(window_size)+'D',min_periods=window_size).mean()
     arr2=[dfr.shift(periods=(window_size*n+ndays),freq='D') for n in range(nwindows)]
     df_x=pd.concat(arr1+arr2,axis=1).dropna()# nsamples, nfeatures
+    
+    # Adjust column names
+    new_columns = []
+    
+    for n in range(ndays):
+        for col in df.columns:
+            new_columns.append(col + '_lag{}'.format(n + 1))
+    for n in range(nwindows):
+        for col in df.columns:
+            new_columns.append(col + '_avg{}'.format(n + 1))
+    
+    df_x.columns = new_columns
+    
     return df_x
 
 def trim_output_to_index(df,index):
@@ -117,6 +133,7 @@ def apply_augmentation(x, apply_aug=False,noise_sigma=0.03,dropout_ratio=0):
         x = jitter(x,sigma=noise_sigma)
         x = dropout(x,p=dropout_ratio)
     return x
+
 
 def create_training_sets(dfin, dfout, calib_slice=slice('1940','2015'), valid_slice=slice('1923','1939'),
                          train_frac=None,
@@ -407,3 +424,86 @@ def conv_filter_generator(ndays=7,window_size = 11, nwindows=10):
     for ii in range(nwindows):
         w[0,((nwindows-ii-1)*window_size):((nwindows-ii)*window_size),ndays+ii] = 1/window_size
     return w
+
+def read_excel_sheet(data_path, sheet_index):
+    pickle_path = data_path.replace('.xlsx', '_sheet%d.pkl' % sheet_index)
+    # find the folder containing the pickle_path
+    pickle_folder = os.path.dirname(pickle_path)
+    # find the filename of the pickle_path
+    pickle_filename = os.path.basename(pickle_path)
+    pickle_path = os.path.join(pickle_folder, 'cache', pickle_filename)
+    
+    # if pickle file exists and its more recent than data_path read from pickle file
+    if os.path.exists(pickle_path) and os.path.getmtime(pickle_path) > os.path.getmtime(data_path):
+        return pd.read_pickle(pickle_path)
+    else:
+        retval = pd.read_excel(data_path, sheet_index, index_col=0, parse_dates=True)
+        # create cache folder if it doesn't exist
+        if not os.path.exists(os.path.dirname(pickle_path)):
+            os.makedirs(os.path.dirname(pickle_path))
+        retval.to_pickle(pickle_path)
+    return retval
+
+def create_or_update_xyscaler(xscaler, yscaler, dfinps, dfouts):
+    # create tuple of calibration and validation sets and the xscaler and yscaler on the combined inputs
+    if xscaler is None:
+        xscaler, yscaler = create_xyscaler([dfinps], [dfouts])
+    else:
+        temp_xscaler, temp_yscaler = create_xyscaler([dfinps], [dfouts])
+        if not np.any(np.isnan(temp_xscaler.max_val)) and not np.any(np.isnan(temp_yscaler.max_val)):
+            xscaler.update(temp_xscaler)
+            yscaler.update(temp_yscaler)
+    return xscaler, yscaler
+
+def read_output_stations(output_stations, observed_stations):
+    # read station names
+    name_mapping = {}
+    for s in output_stations:
+        # s might be something like: 'CHDMC006-CVP INTAKE'
+        for ss in observed_stations:
+            if ss in s:
+                # ss might be like 'CHDMC006'
+                name_mapping[s] = ss
+    output_stations = list(name_mapping.values())
+    return output_stations, name_mapping
+
+def read_and_split(data_path, num_sheets, observed_stations):
+    dflist = [read_excel_sheet(data_path, i) for i in range(num_sheets)]
+    
+    df_inputs_and_outputs = pd.concat(dflist[0:num_sheets], axis=1).dropna(axis=0)
+    last_sheet_columns = dflist[num_sheets - 1].columns
+    col_mask = df_inputs_and_outputs.columns.isin(last_sheet_columns)
+    df_inputs = df_inputs_and_outputs.loc[:, ~col_mask]
+    df_outputs = df_inputs_and_outputs.loc[:, col_mask]
+   
+    out_stations, name_mapping = read_output_stations(list(df_outputs.columns), observed_stations)
+    
+    df_outputs = df_outputs.rename(columns=name_mapping)[out_stations]
+    return df_inputs, df_outputs
+
+# This method isn't really used atm - this was if the datetime was in a different column.
+def include_by_column(df, start_and_end, datetime_column):
+    filtered_data = pd.DataFrame(columns=df.columns)  # Empty DataFrame to store filtered rows
+    
+    # Iterate over start and end times
+    for start, end in start_and_end:
+        start_date = pd.to_datetime(start)
+        end_date = pd.to_datetime(end)
+        
+        # Filter the DataFrame based on time range
+        mask = (df[datetime_column] >= start_date) & (df[datetime_column] <= end_date)
+        filtered_rows = df[mask]
+        
+        # Append filtered rows to the empty DataFrame
+        filtered_data = filtered_data.append(filtered_rows)
+    return filtered_data
+
+def include(df, start_and_end):
+    return pd.concat([df.loc[start:end] for start, end in start_and_end])
+
+
+def exclude(df, start_and_end):
+    for start, end in start_and_end:
+        df = df.drop(df.loc[start:end].index)
+    return df
+
