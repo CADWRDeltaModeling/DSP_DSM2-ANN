@@ -1,0 +1,1707 @@
+model_str_def: lstm8_f_o1
+len_stations:  23
+layer_strings:['i118', 'lstm8', 'f', 'o1']
+Model summary:
+Model: "model_20"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_21 (InputLayer)       [(None, 944)]             0         
+                                                                 
+ reshape_20 (Reshape)        (None, 118, 8)            0         
+                                                                 
+ permute_20 (Permute)        (None, 8, 118)            0         
+                                                                 
+ lstm_18 (LSTM)              (None, 184)               223008    
+                                                                 
+ flatten_40 (Flatten)        (None, 184)               0         
+                                                                 
+ dense_60 (Dense)            (None, 23)                4255      
+                                                                 
+=================================================================
+Total params: 227,263
+Trainable params: 227,263
+Non-trainable params: 0
+_________________________________________________________________
+None
+Creating new scalers
+Epoch 1/100
+18/18 - 2s - loss: 0.1094 - val_loss: 0.0516 - 2s/epoch - 109ms/step
+Epoch 2/100
+18/18 - 1s - loss: 0.0563 - val_loss: 0.0494 - 598ms/epoch - 33ms/step
+Epoch 3/100
+18/18 - 1s - loss: 0.0477 - val_loss: 0.0448 - 582ms/epoch - 32ms/step
+Epoch 4/100
+18/18 - 1s - loss: 0.0429 - val_loss: 0.0434 - 633ms/epoch - 35ms/step
+Epoch 5/100
+18/18 - 1s - loss: 0.0404 - val_loss: 0.0414 - 597ms/epoch - 33ms/step
+Epoch 6/100
+18/18 - 1s - loss: 0.0379 - val_loss: 0.0394 - 596ms/epoch - 33ms/step
+Epoch 7/100
+18/18 - 1s - loss: 0.0358 - val_loss: 0.0389 - 586ms/epoch - 33ms/step
+Epoch 8/100
+18/18 - 1s - loss: 0.0340 - val_loss: 0.0391 - 586ms/epoch - 33ms/step
+Epoch 9/100
+18/18 - 1s - loss: 0.0324 - val_loss: 0.0401 - 593ms/epoch - 33ms/step
+Epoch 10/100
+18/18 - 1s - loss: 0.0311 - val_loss: 0.0372 - 594ms/epoch - 33ms/step
+Epoch 11/100
+18/18 - 1s - loss: 0.0294 - val_loss: 0.0357 - 581ms/epoch - 32ms/step
+Epoch 12/100
+18/18 - 1s - loss: 0.0291 - val_loss: 0.0351 - 588ms/epoch - 33ms/step
+Epoch 13/100
+18/18 - 1s - loss: 0.0276 - val_loss: 0.0342 - 597ms/epoch - 33ms/step
+Epoch 14/100
+18/18 - 1s - loss: 0.0261 - val_loss: 0.0407 - 589ms/epoch - 33ms/step
+Epoch 15/100
+18/18 - 1s - loss: 0.0255 - val_loss: 0.0347 - 583ms/epoch - 32ms/step
+Epoch 16/100
+18/18 - 1s - loss: 0.0244 - val_loss: 0.0368 - 590ms/epoch - 33ms/step
+Epoch 17/100
+18/18 - 1s - loss: 0.0240 - val_loss: 0.0346 - 585ms/epoch - 32ms/step
+Epoch 18/100
+18/18 - 1s - loss: 0.0226 - val_loss: 0.0366 - 588ms/epoch - 33ms/step
+Epoch 19/100
+18/18 - 1s - loss: 0.0226 - val_loss: 0.0361 - 586ms/epoch - 33ms/step
+Epoch 20/100
+18/18 - 1s - loss: 0.0209 - val_loss: 0.0323 - 584ms/epoch - 32ms/step
+Epoch 21/100
+18/18 - 1s - loss: 0.0209 - val_loss: 0.0369 - 619ms/epoch - 34ms/step
+Epoch 22/100
+18/18 - 1s - loss: 0.0206 - val_loss: 0.0336 - 582ms/epoch - 32ms/step
+Epoch 23/100
+18/18 - 1s - loss: 0.0205 - val_loss: 0.0308 - 588ms/epoch - 33ms/step
+Epoch 24/100
+18/18 - 1s - loss: 0.0192 - val_loss: 0.0298 - 584ms/epoch - 32ms/step
+Epoch 25/100
+18/18 - 1s - loss: 0.0195 - val_loss: 0.0456 - 583ms/epoch - 32ms/step
+Epoch 26/100
+18/18 - 1s - loss: 0.0191 - val_loss: 0.0281 - 584ms/epoch - 32ms/step
+Epoch 27/100
+18/18 - 1s - loss: 0.0179 - val_loss: 0.0339 - 585ms/epoch - 33ms/step
+Epoch 28/100
+18/18 - 1s - loss: 0.0176 - val_loss: 0.0295 - 588ms/epoch - 33ms/step
+Epoch 29/100
+18/18 - 1s - loss: 0.0171 - val_loss: 0.0289 - 592ms/epoch - 33ms/step
+Epoch 30/100
+18/18 - 1s - loss: 0.0173 - val_loss: 0.0278 - 602ms/epoch - 33ms/step
+Epoch 31/100
+18/18 - 1s - loss: 0.0167 - val_loss: 0.0300 - 599ms/epoch - 33ms/step
+Epoch 32/100
+18/18 - 1s - loss: 0.0164 - val_loss: 0.0275 - 594ms/epoch - 33ms/step
+Epoch 33/100
+18/18 - 1s - loss: 0.0170 - val_loss: 0.0285 - 594ms/epoch - 33ms/step
+Epoch 34/100
+18/18 - 1s - loss: 0.0155 - val_loss: 0.0281 - 589ms/epoch - 33ms/step
+Epoch 35/100
+18/18 - 1s - loss: 0.0152 - val_loss: 0.0272 - 594ms/epoch - 33ms/step
+Epoch 36/100
+18/18 - 1s - loss: 0.0147 - val_loss: 0.0273 - 593ms/epoch - 33ms/step
+Epoch 37/100
+18/18 - 1s - loss: 0.0146 - val_loss: 0.0274 - 591ms/epoch - 33ms/step
+Epoch 38/100
+18/18 - 1s - loss: 0.0147 - val_loss: 0.0290 - 641ms/epoch - 36ms/step
+Epoch 39/100
+18/18 - 1s - loss: 0.0151 - val_loss: 0.0263 - 615ms/epoch - 34ms/step
+Epoch 40/100
+18/18 - 1s - loss: 0.0138 - val_loss: 0.0328 - 598ms/epoch - 33ms/step
+Epoch 41/100
+18/18 - 1s - loss: 0.0141 - val_loss: 0.0265 - 588ms/epoch - 33ms/step
+Epoch 42/100
+18/18 - 1s - loss: 0.0136 - val_loss: 0.0234 - 607ms/epoch - 34ms/step
+Epoch 43/100
+18/18 - 1s - loss: 0.0135 - val_loss: 0.0284 - 590ms/epoch - 33ms/step
+Epoch 44/100
+18/18 - 1s - loss: 0.0133 - val_loss: 0.0286 - 592ms/epoch - 33ms/step
+Epoch 45/100
+18/18 - 1s - loss: 0.0132 - val_loss: 0.0238 - 583ms/epoch - 32ms/step
+Epoch 46/100
+18/18 - 1s - loss: 0.0125 - val_loss: 0.0239 - 595ms/epoch - 33ms/step
+Epoch 47/100
+18/18 - 1s - loss: 0.0123 - val_loss: 0.0248 - 599ms/epoch - 33ms/step
+Epoch 48/100
+18/18 - 1s - loss: 0.0118 - val_loss: 0.0251 - 586ms/epoch - 33ms/step
+Epoch 49/100
+18/18 - 1s - loss: 0.0118 - val_loss: 0.0240 - 598ms/epoch - 33ms/step
+Epoch 50/100
+18/18 - 1s - loss: 0.0115 - val_loss: 0.0233 - 595ms/epoch - 33ms/step
+Epoch 51/100
+18/18 - 1s - loss: 0.0114 - val_loss: 0.0227 - 594ms/epoch - 33ms/step
+Epoch 52/100
+18/18 - 1s - loss: 0.0114 - val_loss: 0.0273 - 586ms/epoch - 33ms/step
+Epoch 53/100
+18/18 - 1s - loss: 0.0113 - val_loss: 0.0220 - 591ms/epoch - 33ms/step
+Epoch 54/100
+18/18 - 1s - loss: 0.0111 - val_loss: 0.0212 - 605ms/epoch - 34ms/step
+Epoch 55/100
+18/18 - 1s - loss: 0.0107 - val_loss: 0.0220 - 615ms/epoch - 34ms/step
+Epoch 56/100
+18/18 - 1s - loss: 0.0103 - val_loss: 0.0224 - 600ms/epoch - 33ms/step
+Epoch 57/100
+18/18 - 1s - loss: 0.0100 - val_loss: 0.0238 - 590ms/epoch - 33ms/step
+Epoch 58/100
+18/18 - 1s - loss: 0.0098 - val_loss: 0.0198 - 589ms/epoch - 33ms/step
+Epoch 59/100
+18/18 - 1s - loss: 0.0109 - val_loss: 0.0242 - 589ms/epoch - 33ms/step
+Epoch 60/100
+18/18 - 1s - loss: 0.0097 - val_loss: 0.0225 - 584ms/epoch - 32ms/step
+Epoch 61/100
+18/18 - 1s - loss: 0.0096 - val_loss: 0.0207 - 585ms/epoch - 33ms/step
+Epoch 62/100
+18/18 - 1s - loss: 0.0091 - val_loss: 0.0204 - 598ms/epoch - 33ms/step
+Epoch 63/100
+18/18 - 1s - loss: 0.0095 - val_loss: 0.0235 - 595ms/epoch - 33ms/step
+Epoch 64/100
+18/18 - 1s - loss: 0.0092 - val_loss: 0.0274 - 600ms/epoch - 33ms/step
+Epoch 65/100
+18/18 - 1s - loss: 0.0099 - val_loss: 0.0218 - 597ms/epoch - 33ms/step
+Epoch 66/100
+18/18 - 1s - loss: 0.0086 - val_loss: 0.0217 - 596ms/epoch - 33ms/step
+Epoch 67/100
+18/18 - 1s - loss: 0.0091 - val_loss: 0.0203 - 594ms/epoch - 33ms/step
+Epoch 68/100
+18/18 - 1s - loss: 0.0083 - val_loss: 0.0202 - 591ms/epoch - 33ms/step
+Epoch 69/100
+18/18 - 1s - loss: 0.0082 - val_loss: 0.0224 - 589ms/epoch - 33ms/step
+Epoch 70/100
+18/18 - 1s - loss: 0.0081 - val_loss: 0.0201 - 591ms/epoch - 33ms/step
+Epoch 71/100
+18/18 - 1s - loss: 0.0078 - val_loss: 0.0206 - 619ms/epoch - 34ms/step
+Epoch 72/100
+18/18 - 1s - loss: 0.0083 - val_loss: 0.0206 - 608ms/epoch - 34ms/step
+Epoch 73/100
+18/18 - 1s - loss: 0.0079 - val_loss: 0.0235 - 583ms/epoch - 32ms/step
+Epoch 74/100
+18/18 - 1s - loss: 0.0080 - val_loss: 0.0196 - 595ms/epoch - 33ms/step
+Epoch 75/100
+18/18 - 1s - loss: 0.0076 - val_loss: 0.0196 - 591ms/epoch - 33ms/step
+Epoch 76/100
+18/18 - 1s - loss: 0.0076 - val_loss: 0.0250 - 591ms/epoch - 33ms/step
+Epoch 77/100
+18/18 - 1s - loss: 0.0079 - val_loss: 0.0201 - 590ms/epoch - 33ms/step
+Epoch 78/100
+18/18 - 1s - loss: 0.0071 - val_loss: 0.0193 - 592ms/epoch - 33ms/step
+Epoch 79/100
+18/18 - 1s - loss: 0.0069 - val_loss: 0.0198 - 593ms/epoch - 33ms/step
+Epoch 80/100
+18/18 - 1s - loss: 0.0073 - val_loss: 0.0192 - 591ms/epoch - 33ms/step
+Epoch 81/100
+18/18 - 1s - loss: 0.0069 - val_loss: 0.0204 - 585ms/epoch - 33ms/step
+Epoch 82/100
+18/18 - 1s - loss: 0.0070 - val_loss: 0.0201 - 594ms/epoch - 33ms/step
+Epoch 83/100
+18/18 - 1s - loss: 0.0067 - val_loss: 0.0181 - 589ms/epoch - 33ms/step
+Epoch 84/100
+18/18 - 1s - loss: 0.0068 - val_loss: 0.0183 - 589ms/epoch - 33ms/step
+Epoch 85/100
+18/18 - 1s - loss: 0.0070 - val_loss: 0.0226 - 590ms/epoch - 33ms/step
+Epoch 86/100
+18/18 - 1s - loss: 0.0070 - val_loss: 0.0202 - 589ms/epoch - 33ms/step
+Epoch 87/100
+18/18 - 1s - loss: 0.0067 - val_loss: 0.0184 - 586ms/epoch - 33ms/step
+Epoch 88/100
+18/18 - 1s - loss: 0.0064 - val_loss: 0.0205 - 615ms/epoch - 34ms/step
+Epoch 89/100
+18/18 - 1s - loss: 0.0064 - val_loss: 0.0186 - 595ms/epoch - 33ms/step
+Epoch 90/100
+18/18 - 1s - loss: 0.0065 - val_loss: 0.0184 - 589ms/epoch - 33ms/step
+Epoch 91/100
+18/18 - 1s - loss: 0.0062 - val_loss: 0.0187 - 588ms/epoch - 33ms/step
+Epoch 92/100
+18/18 - 1s - loss: 0.0064 - val_loss: 0.0258 - 588ms/epoch - 33ms/step
+Epoch 93/100
+18/18 - 1s - loss: 0.0071 - val_loss: 0.0194 - 588ms/epoch - 33ms/step
+Epoch 94/100
+18/18 - 1s - loss: 0.0059 - val_loss: 0.0189 - 591ms/epoch - 33ms/step
+Epoch 95/100
+18/18 - 1s - loss: 0.0058 - val_loss: 0.0204 - 590ms/epoch - 33ms/step
+Epoch 96/100
+18/18 - 1s - loss: 0.0060 - val_loss: 0.0198 - 589ms/epoch - 33ms/step
+Epoch 97/100
+18/18 - 1s - loss: 0.0058 - val_loss: 0.0199 - 591ms/epoch - 33ms/step
+Epoch 98/100
+18/18 - 1s - loss: 0.0059 - val_loss: 0.0199 - 587ms/epoch - 33ms/step
+Epoch 99/100
+18/18 - 1s - loss: 0.0058 - val_loss: 0.0196 - 588ms/epoch - 33ms/step
+Epoch 100/100
+18/18 - 1s - loss: 0.0056 - val_loss: 0.0213 - 596ms/epoch - 33ms/step
+Model saved to .\Experiments\6years\models\mtl_i118_lstm8_f_o1
+Training time: 1 min
+model_str_def: g8_f_o1
+len_stations:  23
+layer_strings:['i118', 'g8', 'f', 'o1']
+Model summary:
+Model: "model_21"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_22 (InputLayer)       [(None, 944)]             0         
+                                                                 
+ reshape_21 (Reshape)        (None, 118, 8)            0         
+                                                                 
+ permute_21 (Permute)        (None, 8, 118)            0         
+                                                                 
+ gru_2 (GRU)                 (None, 8, 184)            167808    
+                                                                 
+ flatten_41 (Flatten)        (None, 1472)              0         
+                                                                 
+ dense_61 (Dense)            (None, 23)                33879     
+                                                                 
+=================================================================
+Total params: 201,687
+Trainable params: 201,687
+Non-trainable params: 0
+_________________________________________________________________
+None
+Creating new scalers
+Epoch 1/100
+18/18 - 2s - loss: 0.0711 - val_loss: 0.0395 - 2s/epoch - 97ms/step
+Epoch 2/100
+18/18 - 0s - loss: 0.0253 - val_loss: 0.0270 - 484ms/epoch - 27ms/step
+Epoch 3/100
+18/18 - 0s - loss: 0.0177 - val_loss: 0.0240 - 483ms/epoch - 27ms/step
+Epoch 4/100
+18/18 - 0s - loss: 0.0137 - val_loss: 0.0245 - 475ms/epoch - 26ms/step
+Epoch 5/100
+18/18 - 0s - loss: 0.0114 - val_loss: 0.0227 - 479ms/epoch - 27ms/step
+Epoch 6/100
+18/18 - 0s - loss: 0.0095 - val_loss: 0.0228 - 487ms/epoch - 27ms/step
+Epoch 7/100
+18/18 - 0s - loss: 0.0082 - val_loss: 0.0217 - 489ms/epoch - 27ms/step
+Epoch 8/100
+18/18 - 0s - loss: 0.0069 - val_loss: 0.0205 - 483ms/epoch - 27ms/step
+Epoch 9/100
+18/18 - 1s - loss: 0.0063 - val_loss: 0.0272 - 516ms/epoch - 29ms/step
+Epoch 10/100
+18/18 - 1s - loss: 0.0063 - val_loss: 0.0199 - 538ms/epoch - 30ms/step
+Epoch 11/100
+18/18 - 1s - loss: 0.0049 - val_loss: 0.0192 - 578ms/epoch - 32ms/step
+Epoch 12/100
+18/18 - 1s - loss: 0.0045 - val_loss: 0.0182 - 541ms/epoch - 30ms/step
+Epoch 13/100
+18/18 - 1s - loss: 0.0041 - val_loss: 0.0192 - 541ms/epoch - 30ms/step
+Epoch 14/100
+18/18 - 1s - loss: 0.0038 - val_loss: 0.0187 - 523ms/epoch - 29ms/step
+Epoch 15/100
+18/18 - 1s - loss: 0.0035 - val_loss: 0.0188 - 503ms/epoch - 28ms/step
+Epoch 16/100
+18/18 - 0s - loss: 0.0032 - val_loss: 0.0177 - 497ms/epoch - 28ms/step
+Epoch 17/100
+18/18 - 0s - loss: 0.0032 - val_loss: 0.0201 - 483ms/epoch - 27ms/step
+Epoch 18/100
+18/18 - 0s - loss: 0.0029 - val_loss: 0.0178 - 486ms/epoch - 27ms/step
+Epoch 19/100
+18/18 - 0s - loss: 0.0028 - val_loss: 0.0192 - 481ms/epoch - 27ms/step
+Epoch 20/100
+18/18 - 0s - loss: 0.0027 - val_loss: 0.0202 - 489ms/epoch - 27ms/step
+Epoch 21/100
+18/18 - 0s - loss: 0.0026 - val_loss: 0.0191 - 486ms/epoch - 27ms/step
+Epoch 22/100
+18/18 - 1s - loss: 0.0025 - val_loss: 0.0174 - 509ms/epoch - 28ms/step
+Epoch 23/100
+18/18 - 1s - loss: 0.0024 - val_loss: 0.0188 - 518ms/epoch - 29ms/step
+Epoch 24/100
+18/18 - 0s - loss: 0.0021 - val_loss: 0.0185 - 484ms/epoch - 27ms/step
+Epoch 25/100
+18/18 - 0s - loss: 0.0021 - val_loss: 0.0182 - 485ms/epoch - 27ms/step
+Epoch 26/100
+18/18 - 0s - loss: 0.0020 - val_loss: 0.0181 - 497ms/epoch - 28ms/step
+Epoch 27/100
+18/18 - 1s - loss: 0.0020 - val_loss: 0.0176 - 500ms/epoch - 28ms/step
+Epoch 28/100
+18/18 - 1s - loss: 0.0019 - val_loss: 0.0180 - 508ms/epoch - 28ms/step
+Epoch 29/100
+18/18 - 0s - loss: 0.0018 - val_loss: 0.0182 - 492ms/epoch - 27ms/step
+Epoch 30/100
+18/18 - 0s - loss: 0.0018 - val_loss: 0.0187 - 488ms/epoch - 27ms/step
+Epoch 31/100
+18/18 - 0s - loss: 0.0018 - val_loss: 0.0184 - 482ms/epoch - 27ms/step
+Epoch 32/100
+18/18 - 0s - loss: 0.0016 - val_loss: 0.0185 - 483ms/epoch - 27ms/step
+Epoch 33/100
+18/18 - 0s - loss: 0.0016 - val_loss: 0.0180 - 482ms/epoch - 27ms/step
+Epoch 34/100
+18/18 - 0s - loss: 0.0016 - val_loss: 0.0193 - 481ms/epoch - 27ms/step
+Epoch 35/100
+18/18 - 0s - loss: 0.0016 - val_loss: 0.0187 - 487ms/epoch - 27ms/step
+Epoch 36/100
+18/18 - 0s - loss: 0.0015 - val_loss: 0.0181 - 480ms/epoch - 27ms/step
+Epoch 37/100
+18/18 - 0s - loss: 0.0014 - val_loss: 0.0182 - 484ms/epoch - 27ms/step
+Epoch 38/100
+18/18 - 0s - loss: 0.0014 - val_loss: 0.0180 - 480ms/epoch - 27ms/step
+Epoch 39/100
+18/18 - 0s - loss: 0.0015 - val_loss: 0.0171 - 483ms/epoch - 27ms/step
+Epoch 40/100
+18/18 - 0s - loss: 0.0014 - val_loss: 0.0185 - 477ms/epoch - 27ms/step
+Epoch 41/100
+18/18 - 0s - loss: 0.0013 - val_loss: 0.0181 - 481ms/epoch - 27ms/step
+Epoch 42/100
+18/18 - 0s - loss: 0.0012 - val_loss: 0.0186 - 476ms/epoch - 26ms/step
+Epoch 43/100
+18/18 - 1s - loss: 0.0012 - val_loss: 0.0192 - 502ms/epoch - 28ms/step
+Epoch 44/100
+18/18 - 0s - loss: 0.0012 - val_loss: 0.0181 - 494ms/epoch - 27ms/step
+Epoch 45/100
+18/18 - 0s - loss: 0.0011 - val_loss: 0.0175 - 488ms/epoch - 27ms/step
+Epoch 46/100
+18/18 - 0s - loss: 0.0011 - val_loss: 0.0192 - 482ms/epoch - 27ms/step
+Epoch 47/100
+18/18 - 0s - loss: 0.0011 - val_loss: 0.0181 - 480ms/epoch - 27ms/step
+Epoch 48/100
+18/18 - 0s - loss: 0.0011 - val_loss: 0.0184 - 480ms/epoch - 27ms/step
+Epoch 49/100
+18/18 - 0s - loss: 0.0010 - val_loss: 0.0191 - 477ms/epoch - 26ms/step
+Epoch 50/100
+18/18 - 0s - loss: 0.0010 - val_loss: 0.0189 - 480ms/epoch - 27ms/step
+Epoch 51/100
+18/18 - 0s - loss: 0.0010 - val_loss: 0.0177 - 476ms/epoch - 26ms/step
+Epoch 52/100
+18/18 - 0s - loss: 0.0011 - val_loss: 0.0188 - 476ms/epoch - 26ms/step
+Epoch 53/100
+18/18 - 0s - loss: 9.4837e-04 - val_loss: 0.0187 - 477ms/epoch - 27ms/step
+Epoch 54/100
+18/18 - 0s - loss: 9.3874e-04 - val_loss: 0.0180 - 479ms/epoch - 27ms/step
+Epoch 55/100
+18/18 - 0s - loss: 9.3893e-04 - val_loss: 0.0183 - 480ms/epoch - 27ms/step
+Epoch 56/100
+18/18 - 0s - loss: 9.4850e-04 - val_loss: 0.0190 - 481ms/epoch - 27ms/step
+Epoch 57/100
+18/18 - 0s - loss: 8.5413e-04 - val_loss: 0.0185 - 479ms/epoch - 27ms/step
+Epoch 58/100
+18/18 - 0s - loss: 8.4705e-04 - val_loss: 0.0186 - 479ms/epoch - 27ms/step
+Epoch 59/100
+18/18 - 0s - loss: 8.5222e-04 - val_loss: 0.0187 - 479ms/epoch - 27ms/step
+Epoch 60/100
+18/18 - 0s - loss: 9.0579e-04 - val_loss: 0.0191 - 481ms/epoch - 27ms/step
+Epoch 61/100
+18/18 - 0s - loss: 8.5423e-04 - val_loss: 0.0192 - 478ms/epoch - 27ms/step
+Epoch 62/100
+18/18 - 0s - loss: 8.1879e-04 - val_loss: 0.0185 - 478ms/epoch - 27ms/step
+Epoch 63/100
+18/18 - 0s - loss: 7.8995e-04 - val_loss: 0.0185 - 479ms/epoch - 27ms/step
+Epoch 64/100
+18/18 - 0s - loss: 7.9528e-04 - val_loss: 0.0186 - 481ms/epoch - 27ms/step
+Epoch 65/100
+18/18 - 0s - loss: 7.7982e-04 - val_loss: 0.0181 - 480ms/epoch - 27ms/step
+Epoch 66/100
+18/18 - 0s - loss: 7.6531e-04 - val_loss: 0.0196 - 486ms/epoch - 27ms/step
+Epoch 67/100
+18/18 - 0s - loss: 7.8363e-04 - val_loss: 0.0188 - 478ms/epoch - 27ms/step
+Epoch 68/100
+18/18 - 0s - loss: 7.2120e-04 - val_loss: 0.0194 - 482ms/epoch - 27ms/step
+Epoch 69/100
+18/18 - 0s - loss: 7.3135e-04 - val_loss: 0.0181 - 476ms/epoch - 26ms/step
+Epoch 70/100
+18/18 - 0s - loss: 7.2239e-04 - val_loss: 0.0187 - 480ms/epoch - 27ms/step
+Epoch 71/100
+18/18 - 0s - loss: 7.0225e-04 - val_loss: 0.0192 - 484ms/epoch - 27ms/step
+Epoch 72/100
+18/18 - 0s - loss: 6.8051e-04 - val_loss: 0.0189 - 478ms/epoch - 27ms/step
+Epoch 73/100
+18/18 - 0s - loss: 6.7159e-04 - val_loss: 0.0181 - 478ms/epoch - 27ms/step
+Epoch 74/100
+18/18 - 0s - loss: 6.9547e-04 - val_loss: 0.0196 - 476ms/epoch - 26ms/step
+Epoch 75/100
+18/18 - 0s - loss: 6.6842e-04 - val_loss: 0.0188 - 473ms/epoch - 26ms/step
+Epoch 76/100
+18/18 - 0s - loss: 6.7062e-04 - val_loss: 0.0190 - 477ms/epoch - 27ms/step
+Epoch 77/100
+18/18 - 0s - loss: 6.4820e-04 - val_loss: 0.0193 - 480ms/epoch - 27ms/step
+Epoch 78/100
+18/18 - 0s - loss: 6.8983e-04 - val_loss: 0.0180 - 478ms/epoch - 27ms/step
+Epoch 79/100
+18/18 - 0s - loss: 6.4653e-04 - val_loss: 0.0185 - 481ms/epoch - 27ms/step
+Epoch 80/100
+18/18 - 0s - loss: 6.1013e-04 - val_loss: 0.0185 - 478ms/epoch - 27ms/step
+Epoch 81/100
+18/18 - 0s - loss: 6.1699e-04 - val_loss: 0.0205 - 487ms/epoch - 27ms/step
+Epoch 82/100
+18/18 - 0s - loss: 6.3308e-04 - val_loss: 0.0188 - 483ms/epoch - 27ms/step
+Epoch 83/100
+18/18 - 0s - loss: 5.9514e-04 - val_loss: 0.0194 - 482ms/epoch - 27ms/step
+Epoch 84/100
+18/18 - 0s - loss: 5.8496e-04 - val_loss: 0.0200 - 483ms/epoch - 27ms/step
+Epoch 85/100
+18/18 - 0s - loss: 6.3232e-04 - val_loss: 0.0188 - 480ms/epoch - 27ms/step
+Epoch 86/100
+18/18 - 0s - loss: 6.2049e-04 - val_loss: 0.0192 - 480ms/epoch - 27ms/step
+Epoch 87/100
+18/18 - 0s - loss: 5.6694e-04 - val_loss: 0.0185 - 483ms/epoch - 27ms/step
+Epoch 88/100
+18/18 - 0s - loss: 5.2963e-04 - val_loss: 0.0189 - 483ms/epoch - 27ms/step
+Epoch 89/100
+18/18 - 0s - loss: 5.2859e-04 - val_loss: 0.0183 - 488ms/epoch - 27ms/step
+Model saved to .\Experiments\6years\models\mtl_i118_g8_f_o1
+Training time: 0 min
+model_str_def: resnet_8_2
+len_stations:  23
+Model summary:
+Model: "model_22"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_23 (InputLayer)          [(None, 944)]        0           []                               
+                                                                                                  
+ reshape_22 (Reshape)           (None, 118, 8)       0           ['input_23[0][0]']               
+                                                                                                  
+ dropout_40 (Dropout)           (None, 118, 8)       0           ['reshape_22[0][0]']             
+                                                                                                  
+ padding1_branch2a (ZeroPadding  (None, 120, 8)      0           ['dropout_40[0][0]']             
+ 1D)                                                                                              
+                                                                                                  
+ res1_branch2a (Conv1D)         (None, 118, 8)       192         ['padding1_branch2a[0][0]']      
+                                                                                                  
+ batch_normalization (BatchNorm  (None, 118, 8)      32          ['res1_branch2a[0][0]']          
+ alization)                                                                                       
+                                                                                                  
+ res1_branch2a_relu (Activation  (None, 118, 8)      0           ['batch_normalization[0][0]']    
+ )                                                                                                
+                                                                                                  
+ padding1_branch2b (ZeroPadding  (None, 120, 8)      0           ['res1_branch2a_relu[0][0]']     
+ 1D)                                                                                              
+                                                                                                  
+ res1_branch2b (Conv1D)         (None, 118, 8)       192         ['padding1_branch2b[0][0]']      
+                                                                                                  
+ batch_normalization_1 (BatchNo  (None, 118, 8)      32          ['res1_branch2b[0][0]']          
+ rmalization)                                                                                     
+                                                                                                  
+ flatten_42 (Flatten)           (None, 944)          0           ['batch_normalization_1[0][0]']  
+                                                                                                  
+ dense_62 (Dense)               (None, 184)          173880      ['flatten_42[0][0]']             
+                                                                                                  
+ dense_63 (Dense)               (None, 184)          173880      ['input_23[0][0]']               
+                                                                                                  
+ res1_add (Add)                 (None, 184)          0           ['dense_62[0][0]',               
+                                                                  'dense_63[0][0]']               
+                                                                                                  
+ dropout_41 (Dropout)           (None, 184)          0           ['res1_add[0][0]']               
+                                                                                                  
+ res_relu (Activation)          (None, 184)          0           ['dropout_41[0][0]']             
+                                                                                                  
+ dense_64 (Dense)               (None, 46)           8510        ['res_relu[0][0]']               
+                                                                                                  
+ output (Dense)                 (None, 23)           1081        ['dense_64[0][0]']               
+                                                                                                  
+==================================================================================================
+Total params: 357,799
+Trainable params: 357,767
+Non-trainable params: 32
+__________________________________________________________________________________________________
+None
+Creating new scalers
+Epoch 1/100
+18/18 - 2s - loss: 0.1158 - val_loss: 0.0559 - 2s/epoch - 99ms/step
+Epoch 2/100
+18/18 - 0s - loss: 0.0316 - val_loss: 0.0448 - 349ms/epoch - 19ms/step
+Epoch 3/100
+18/18 - 0s - loss: 0.0214 - val_loss: 0.0440 - 345ms/epoch - 19ms/step
+Epoch 4/100
+18/18 - 0s - loss: 0.0159 - val_loss: 0.0502 - 345ms/epoch - 19ms/step
+Epoch 5/100
+18/18 - 0s - loss: 0.0128 - val_loss: 0.0602 - 340ms/epoch - 19ms/step
+Epoch 6/100
+18/18 - 0s - loss: 0.0104 - val_loss: 0.0666 - 340ms/epoch - 19ms/step
+Epoch 7/100
+18/18 - 0s - loss: 0.0093 - val_loss: 0.0597 - 341ms/epoch - 19ms/step
+Epoch 8/100
+18/18 - 0s - loss: 0.0079 - val_loss: 0.0733 - 341ms/epoch - 19ms/step
+Epoch 9/100
+18/18 - 0s - loss: 0.0066 - val_loss: 0.0691 - 340ms/epoch - 19ms/step
+Epoch 10/100
+18/18 - 0s - loss: 0.0061 - val_loss: 0.0585 - 343ms/epoch - 19ms/step
+Epoch 11/100
+18/18 - 0s - loss: 0.0053 - val_loss: 0.0523 - 338ms/epoch - 19ms/step
+Epoch 12/100
+18/18 - 0s - loss: 0.0046 - val_loss: 0.0412 - 340ms/epoch - 19ms/step
+Epoch 13/100
+18/18 - 0s - loss: 0.0046 - val_loss: 0.0385 - 348ms/epoch - 19ms/step
+Epoch 14/100
+18/18 - 0s - loss: 0.0041 - val_loss: 0.0331 - 343ms/epoch - 19ms/step
+Epoch 15/100
+18/18 - 0s - loss: 0.0037 - val_loss: 0.0362 - 342ms/epoch - 19ms/step
+Epoch 16/100
+18/18 - 0s - loss: 0.0036 - val_loss: 0.0279 - 343ms/epoch - 19ms/step
+Epoch 17/100
+18/18 - 0s - loss: 0.0035 - val_loss: 0.0302 - 340ms/epoch - 19ms/step
+Epoch 18/100
+18/18 - 0s - loss: 0.0030 - val_loss: 0.0283 - 342ms/epoch - 19ms/step
+Epoch 19/100
+18/18 - 0s - loss: 0.0029 - val_loss: 0.0277 - 341ms/epoch - 19ms/step
+Epoch 20/100
+18/18 - 0s - loss: 0.0027 - val_loss: 0.0278 - 340ms/epoch - 19ms/step
+Epoch 21/100
+18/18 - 0s - loss: 0.0028 - val_loss: 0.0239 - 345ms/epoch - 19ms/step
+Epoch 22/100
+18/18 - 0s - loss: 0.0028 - val_loss: 0.0295 - 341ms/epoch - 19ms/step
+Epoch 23/100
+18/18 - 0s - loss: 0.0024 - val_loss: 0.0284 - 335ms/epoch - 19ms/step
+Epoch 24/100
+18/18 - 0s - loss: 0.0025 - val_loss: 0.0264 - 342ms/epoch - 19ms/step
+Epoch 25/100
+18/18 - 0s - loss: 0.0023 - val_loss: 0.0275 - 340ms/epoch - 19ms/step
+Epoch 26/100
+18/18 - 0s - loss: 0.0025 - val_loss: 0.0232 - 342ms/epoch - 19ms/step
+Epoch 27/100
+18/18 - 0s - loss: 0.0020 - val_loss: 0.0255 - 349ms/epoch - 19ms/step
+Epoch 28/100
+18/18 - 0s - loss: 0.0019 - val_loss: 0.0255 - 341ms/epoch - 19ms/step
+Epoch 29/100
+18/18 - 0s - loss: 0.0023 - val_loss: 0.0246 - 341ms/epoch - 19ms/step
+Epoch 30/100
+18/18 - 0s - loss: 0.0018 - val_loss: 0.0266 - 344ms/epoch - 19ms/step
+Epoch 31/100
+18/18 - 0s - loss: 0.0018 - val_loss: 0.0289 - 339ms/epoch - 19ms/step
+Epoch 32/100
+18/18 - 0s - loss: 0.0018 - val_loss: 0.0249 - 338ms/epoch - 19ms/step
+Epoch 33/100
+18/18 - 0s - loss: 0.0015 - val_loss: 0.0262 - 341ms/epoch - 19ms/step
+Epoch 34/100
+18/18 - 0s - loss: 0.0014 - val_loss: 0.0252 - 339ms/epoch - 19ms/step
+Epoch 35/100
+18/18 - 0s - loss: 0.0014 - val_loss: 0.0243 - 338ms/epoch - 19ms/step
+Epoch 36/100
+18/18 - 0s - loss: 0.0015 - val_loss: 0.0278 - 344ms/epoch - 19ms/step
+Epoch 37/100
+18/18 - 0s - loss: 0.0016 - val_loss: 0.0263 - 339ms/epoch - 19ms/step
+Epoch 38/100
+18/18 - 0s - loss: 0.0015 - val_loss: 0.0247 - 341ms/epoch - 19ms/step
+Epoch 39/100
+18/18 - 0s - loss: 0.0014 - val_loss: 0.0291 - 335ms/epoch - 19ms/step
+Epoch 40/100
+18/18 - 0s - loss: 0.0019 - val_loss: 0.0244 - 340ms/epoch - 19ms/step
+Epoch 41/100
+18/18 - 0s - loss: 0.0018 - val_loss: 0.0263 - 341ms/epoch - 19ms/step
+Epoch 42/100
+18/18 - 0s - loss: 0.0013 - val_loss: 0.0294 - 342ms/epoch - 19ms/step
+Epoch 43/100
+18/18 - 0s - loss: 0.0013 - val_loss: 0.0256 - 338ms/epoch - 19ms/step
+Epoch 44/100
+18/18 - 0s - loss: 0.0012 - val_loss: 0.0269 - 341ms/epoch - 19ms/step
+Epoch 45/100
+18/18 - 0s - loss: 9.6744e-04 - val_loss: 0.0255 - 345ms/epoch - 19ms/step
+Epoch 46/100
+18/18 - 0s - loss: 0.0011 - val_loss: 0.0247 - 339ms/epoch - 19ms/step
+Epoch 47/100
+18/18 - 0s - loss: 0.0011 - val_loss: 0.0268 - 338ms/epoch - 19ms/step
+Epoch 48/100
+18/18 - 0s - loss: 0.0011 - val_loss: 0.0229 - 341ms/epoch - 19ms/step
+Epoch 49/100
+18/18 - 0s - loss: 0.0010 - val_loss: 0.0233 - 338ms/epoch - 19ms/step
+Epoch 50/100
+18/18 - 0s - loss: 0.0012 - val_loss: 0.0229 - 340ms/epoch - 19ms/step
+Epoch 51/100
+18/18 - 0s - loss: 9.6924e-04 - val_loss: 0.0229 - 344ms/epoch - 19ms/step
+Epoch 52/100
+18/18 - 0s - loss: 0.0010 - val_loss: 0.0259 - 339ms/epoch - 19ms/step
+Epoch 53/100
+18/18 - 0s - loss: 9.6366e-04 - val_loss: 0.0229 - 339ms/epoch - 19ms/step
+Epoch 54/100
+18/18 - 0s - loss: 8.3495e-04 - val_loss: 0.0234 - 345ms/epoch - 19ms/step
+Epoch 55/100
+18/18 - 0s - loss: 9.3271e-04 - val_loss: 0.0251 - 334ms/epoch - 19ms/step
+Epoch 56/100
+18/18 - 0s - loss: 8.9940e-04 - val_loss: 0.0245 - 339ms/epoch - 19ms/step
+Epoch 57/100
+18/18 - 0s - loss: 8.5747e-04 - val_loss: 0.0231 - 342ms/epoch - 19ms/step
+Epoch 58/100
+18/18 - 0s - loss: 8.8458e-04 - val_loss: 0.0281 - 342ms/epoch - 19ms/step
+Epoch 59/100
+18/18 - 0s - loss: 0.0015 - val_loss: 0.0242 - 344ms/epoch - 19ms/step
+Epoch 60/100
+18/18 - 0s - loss: 8.6312e-04 - val_loss: 0.0237 - 339ms/epoch - 19ms/step
+Epoch 61/100
+18/18 - 0s - loss: 8.1621e-04 - val_loss: 0.0269 - 337ms/epoch - 19ms/step
+Epoch 62/100
+18/18 - 0s - loss: 7.6947e-04 - val_loss: 0.0261 - 345ms/epoch - 19ms/step
+Epoch 63/100
+18/18 - 0s - loss: 7.0692e-04 - val_loss: 0.0232 - 339ms/epoch - 19ms/step
+Epoch 64/100
+18/18 - 0s - loss: 8.2917e-04 - val_loss: 0.0261 - 343ms/epoch - 19ms/step
+Epoch 65/100
+18/18 - 0s - loss: 7.8870e-04 - val_loss: 0.0260 - 344ms/epoch - 19ms/step
+Epoch 66/100
+18/18 - 0s - loss: 7.6924e-04 - val_loss: 0.0255 - 340ms/epoch - 19ms/step
+Epoch 67/100
+18/18 - 0s - loss: 6.3843e-04 - val_loss: 0.0253 - 337ms/epoch - 19ms/step
+Epoch 68/100
+18/18 - 0s - loss: 6.5962e-04 - val_loss: 0.0245 - 343ms/epoch - 19ms/step
+Epoch 69/100
+18/18 - 0s - loss: 6.1271e-04 - val_loss: 0.0228 - 344ms/epoch - 19ms/step
+Epoch 70/100
+18/18 - 0s - loss: 6.6899e-04 - val_loss: 0.0238 - 348ms/epoch - 19ms/step
+Epoch 71/100
+18/18 - 0s - loss: 6.1907e-04 - val_loss: 0.0240 - 346ms/epoch - 19ms/step
+Epoch 72/100
+18/18 - 0s - loss: 5.4050e-04 - val_loss: 0.0259 - 340ms/epoch - 19ms/step
+Epoch 73/100
+18/18 - 0s - loss: 5.9126e-04 - val_loss: 0.0258 - 343ms/epoch - 19ms/step
+Epoch 74/100
+18/18 - 0s - loss: 8.8348e-04 - val_loss: 0.0225 - 346ms/epoch - 19ms/step
+Epoch 75/100
+18/18 - 0s - loss: 8.2485e-04 - val_loss: 0.0275 - 344ms/epoch - 19ms/step
+Epoch 76/100
+18/18 - 0s - loss: 7.7855e-04 - val_loss: 0.0247 - 337ms/epoch - 19ms/step
+Epoch 77/100
+18/18 - 0s - loss: 7.0378e-04 - val_loss: 0.0244 - 340ms/epoch - 19ms/step
+Epoch 78/100
+18/18 - 0s - loss: 6.1832e-04 - val_loss: 0.0255 - 337ms/epoch - 19ms/step
+Epoch 79/100
+18/18 - 0s - loss: 6.4634e-04 - val_loss: 0.0247 - 339ms/epoch - 19ms/step
+Epoch 80/100
+18/18 - 0s - loss: 5.7891e-04 - val_loss: 0.0260 - 343ms/epoch - 19ms/step
+Epoch 81/100
+18/18 - 0s - loss: 6.5558e-04 - val_loss: 0.0236 - 340ms/epoch - 19ms/step
+Epoch 82/100
+18/18 - 0s - loss: 6.1089e-04 - val_loss: 0.0229 - 336ms/epoch - 19ms/step
+Epoch 83/100
+18/18 - 0s - loss: 6.7128e-04 - val_loss: 0.0235 - 341ms/epoch - 19ms/step
+Epoch 84/100
+18/18 - 0s - loss: 6.8152e-04 - val_loss: 0.0221 - 341ms/epoch - 19ms/step
+Epoch 85/100
+18/18 - 0s - loss: 9.4315e-04 - val_loss: 0.0228 - 340ms/epoch - 19ms/step
+Epoch 86/100
+18/18 - 0s - loss: 6.5468e-04 - val_loss: 0.0229 - 343ms/epoch - 19ms/step
+Epoch 87/100
+18/18 - 0s - loss: 5.2564e-04 - val_loss: 0.0248 - 340ms/epoch - 19ms/step
+Epoch 88/100
+18/18 - 0s - loss: 8.8706e-04 - val_loss: 0.0227 - 342ms/epoch - 19ms/step
+Epoch 89/100
+18/18 - 0s - loss: 5.7632e-04 - val_loss: 0.0225 - 343ms/epoch - 19ms/step
+Epoch 90/100
+18/18 - 0s - loss: 5.3944e-04 - val_loss: 0.0247 - 340ms/epoch - 19ms/step
+Epoch 91/100
+18/18 - 0s - loss: 4.7686e-04 - val_loss: 0.0229 - 340ms/epoch - 19ms/step
+Epoch 92/100
+18/18 - 0s - loss: 5.5000e-04 - val_loss: 0.0240 - 343ms/epoch - 19ms/step
+Epoch 93/100
+18/18 - 0s - loss: 4.8577e-04 - val_loss: 0.0240 - 341ms/epoch - 19ms/step
+Epoch 94/100
+18/18 - 0s - loss: 5.4418e-04 - val_loss: 0.0241 - 340ms/epoch - 19ms/step
+Epoch 95/100
+18/18 - 0s - loss: 4.3405e-04 - val_loss: 0.0238 - 335ms/epoch - 19ms/step
+Epoch 96/100
+18/18 - 0s - loss: 4.7613e-04 - val_loss: 0.0229 - 337ms/epoch - 19ms/step
+Epoch 97/100
+18/18 - 0s - loss: 5.0502e-04 - val_loss: 0.0234 - 341ms/epoch - 19ms/step
+Epoch 98/100
+18/18 - 0s - loss: 4.7908e-04 - val_loss: 0.0229 - 337ms/epoch - 19ms/step
+Epoch 99/100
+18/18 - 0s - loss: 5.6958e-04 - val_loss: 0.0237 - 340ms/epoch - 19ms/step
+Epoch 100/100
+18/18 - 0s - loss: 9.1847e-04 - val_loss: 0.0230 - 345ms/epoch - 19ms/step
+Model saved to .\Experiments\6years\models\mtl_i118_resnet_8_2
+Training time: 0 min
+model_str_def: residual_lstm_8_2
+len_stations:  23
+model is lstm or gru
+ndays:  118
+nwindows:  0
+window_size:  0
+output_shape:  (2192, 23)
+layer_type:  lstm
+input shape:  944
+Model summary:
+Model: "model_23"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_24 (InputLayer)          [(None, 944)]        0           []                               
+                                                                                                  
+ reshape_23 (Reshape)           (None, 118, 8)       0           ['input_24[0][0]']               
+                                                                                                  
+ dropout_42 (Dropout)           (None, 118, 8)       0           ['reshape_23[0][0]']             
+                                                                                                  
+ permute_22 (Permute)           (None, 8, 118)       0           ['dropout_42[0][0]']             
+                                                                                                  
+ conv1d_20 (Conv1D)             (None, 8, 118)       14042       ['permute_22[0][0]']             
+                                                                                                  
+ flatten_43 (Flatten)           (None, 944)          0           ['conv1d_20[0][0]']              
+                                                                                                  
+ dense_65 (Dense)               (None, 184)          173880      ['flatten_43[0][0]']             
+                                                                                                  
+ dense_67 (Dense)               (None, 8, 184)       21896       ['permute_22[0][0]']             
+                                                                                                  
+ dropout_43 (Dropout)           (None, 184)          0           ['dense_65[0][0]']               
+                                                                                                  
+ lstm_19 (LSTM)                 (None, 8, 46)        42504       ['dense_67[0][0]']               
+                                                                                                  
+ dense_66 (Dense)               (None, 46)           8510        ['dropout_43[0][0]']             
+                                                                                                  
+ flatten_44 (Flatten)           (None, 368)          0           ['lstm_19[0][0]']                
+                                                                                                  
+ mlp_output (Dense)             (None, 23)           1081        ['dense_66[0][0]']               
+                                                                                                  
+ lstm_output (Dense)            (None, 23)           8487        ['flatten_44[0][0]']             
+                                                                                                  
+ res_add (Add)                  (None, 23)           0           ['mlp_output[0][0]',             
+                                                                  'lstm_output[0][0]']            
+                                                                                                  
+ res_relu (LeakyReLU)           (None, 23)           0           ['res_add[0][0]']                
+                                                                                                  
+==================================================================================================
+Total params: 270,400
+Trainable params: 256,358
+Non-trainable params: 14,042
+__________________________________________________________________________________________________
+None
+Creating new scalers
+Epoch 1/100
+18/18 - 3s - loss: 0.1238 - val_loss: 0.0546 - 3s/epoch - 164ms/step
+Epoch 2/100
+18/18 - 1s - loss: 0.0441 - val_loss: 0.0372 - 917ms/epoch - 51ms/step
+Epoch 3/100
+18/18 - 1s - loss: 0.0276 - val_loss: 0.0309 - 910ms/epoch - 51ms/step
+Epoch 4/100
+18/18 - 1s - loss: 0.0208 - val_loss: 0.0263 - 901ms/epoch - 50ms/step
+Epoch 5/100
+18/18 - 1s - loss: 0.0172 - val_loss: 0.0226 - 899ms/epoch - 50ms/step
+Epoch 6/100
+18/18 - 1s - loss: 0.0154 - val_loss: 0.0231 - 897ms/epoch - 50ms/step
+Epoch 7/100
+18/18 - 1s - loss: 0.0142 - val_loss: 0.0210 - 912ms/epoch - 51ms/step
+Epoch 8/100
+18/18 - 1s - loss: 0.0132 - val_loss: 0.0229 - 911ms/epoch - 51ms/step
+Epoch 9/100
+18/18 - 1s - loss: 0.0128 - val_loss: 0.0223 - 914ms/epoch - 51ms/step
+Epoch 10/100
+18/18 - 1s - loss: 0.0120 - val_loss: 0.0211 - 912ms/epoch - 51ms/step
+Epoch 11/100
+18/18 - 1s - loss: 0.0115 - val_loss: 0.0188 - 910ms/epoch - 51ms/step
+Epoch 12/100
+18/18 - 1s - loss: 0.0111 - val_loss: 0.0196 - 911ms/epoch - 51ms/step
+Epoch 13/100
+18/18 - 1s - loss: 0.0108 - val_loss: 0.0190 - 906ms/epoch - 50ms/step
+Epoch 14/100
+18/18 - 1s - loss: 0.0105 - val_loss: 0.0192 - 907ms/epoch - 50ms/step
+Epoch 15/100
+18/18 - 1s - loss: 0.0099 - val_loss: 0.0212 - 907ms/epoch - 50ms/step
+Epoch 16/100
+18/18 - 1s - loss: 0.0101 - val_loss: 0.0187 - 907ms/epoch - 50ms/step
+Epoch 17/100
+18/18 - 1s - loss: 0.0095 - val_loss: 0.0179 - 909ms/epoch - 50ms/step
+Epoch 18/100
+18/18 - 1s - loss: 0.0091 - val_loss: 0.0187 - 906ms/epoch - 50ms/step
+Epoch 19/100
+18/18 - 1s - loss: 0.0088 - val_loss: 0.0186 - 907ms/epoch - 50ms/step
+Epoch 20/100
+18/18 - 1s - loss: 0.0088 - val_loss: 0.0181 - 909ms/epoch - 50ms/step
+Epoch 21/100
+18/18 - 1s - loss: 0.0087 - val_loss: 0.0191 - 907ms/epoch - 50ms/step
+Epoch 22/100
+18/18 - 1s - loss: 0.0086 - val_loss: 0.0185 - 908ms/epoch - 50ms/step
+Epoch 23/100
+18/18 - 1s - loss: 0.0081 - val_loss: 0.0178 - 906ms/epoch - 50ms/step
+Epoch 24/100
+18/18 - 1s - loss: 0.0077 - val_loss: 0.0169 - 907ms/epoch - 50ms/step
+Epoch 25/100
+18/18 - 1s - loss: 0.0075 - val_loss: 0.0172 - 906ms/epoch - 50ms/step
+Epoch 26/100
+18/18 - 1s - loss: 0.0073 - val_loss: 0.0165 - 904ms/epoch - 50ms/step
+Epoch 27/100
+18/18 - 1s - loss: 0.0073 - val_loss: 0.0166 - 903ms/epoch - 50ms/step
+Epoch 28/100
+18/18 - 1s - loss: 0.0069 - val_loss: 0.0161 - 909ms/epoch - 50ms/step
+Epoch 29/100
+18/18 - 1s - loss: 0.0069 - val_loss: 0.0177 - 908ms/epoch - 50ms/step
+Epoch 30/100
+18/18 - 1s - loss: 0.0067 - val_loss: 0.0166 - 906ms/epoch - 50ms/step
+Epoch 31/100
+18/18 - 1s - loss: 0.0065 - val_loss: 0.0163 - 904ms/epoch - 50ms/step
+Epoch 32/100
+18/18 - 1s - loss: 0.0065 - val_loss: 0.0163 - 907ms/epoch - 50ms/step
+Epoch 33/100
+18/18 - 1s - loss: 0.0064 - val_loss: 0.0161 - 908ms/epoch - 50ms/step
+Epoch 34/100
+18/18 - 1s - loss: 0.0059 - val_loss: 0.0168 - 905ms/epoch - 50ms/step
+Epoch 35/100
+18/18 - 1s - loss: 0.0059 - val_loss: 0.0165 - 907ms/epoch - 50ms/step
+Epoch 36/100
+18/18 - 1s - loss: 0.0058 - val_loss: 0.0180 - 909ms/epoch - 51ms/step
+Epoch 37/100
+18/18 - 1s - loss: 0.0057 - val_loss: 0.0169 - 906ms/epoch - 50ms/step
+Epoch 38/100
+18/18 - 1s - loss: 0.0061 - val_loss: 0.0161 - 906ms/epoch - 50ms/step
+Epoch 39/100
+18/18 - 1s - loss: 0.0053 - val_loss: 0.0163 - 904ms/epoch - 50ms/step
+Epoch 40/100
+18/18 - 1s - loss: 0.0052 - val_loss: 0.0160 - 904ms/epoch - 50ms/step
+Epoch 41/100
+18/18 - 1s - loss: 0.0052 - val_loss: 0.0160 - 907ms/epoch - 50ms/step
+Epoch 42/100
+18/18 - 1s - loss: 0.0050 - val_loss: 0.0179 - 914ms/epoch - 51ms/step
+Epoch 43/100
+18/18 - 1s - loss: 0.0050 - val_loss: 0.0165 - 914ms/epoch - 51ms/step
+Epoch 44/100
+18/18 - 1s - loss: 0.0047 - val_loss: 0.0160 - 911ms/epoch - 51ms/step
+Epoch 45/100
+18/18 - 1s - loss: 0.0046 - val_loss: 0.0176 - 908ms/epoch - 50ms/step
+Epoch 46/100
+18/18 - 1s - loss: 0.0046 - val_loss: 0.0157 - 904ms/epoch - 50ms/step
+Epoch 47/100
+18/18 - 1s - loss: 0.0042 - val_loss: 0.0169 - 899ms/epoch - 50ms/step
+Epoch 48/100
+18/18 - 1s - loss: 0.0042 - val_loss: 0.0180 - 909ms/epoch - 50ms/step
+Epoch 49/100
+18/18 - 1s - loss: 0.0042 - val_loss: 0.0157 - 904ms/epoch - 50ms/step
+Epoch 50/100
+18/18 - 1s - loss: 0.0039 - val_loss: 0.0161 - 904ms/epoch - 50ms/step
+Epoch 51/100
+18/18 - 1s - loss: 0.0039 - val_loss: 0.0174 - 905ms/epoch - 50ms/step
+Epoch 52/100
+18/18 - 1s - loss: 0.0037 - val_loss: 0.0162 - 908ms/epoch - 50ms/step
+Epoch 53/100
+18/18 - 1s - loss: 0.0036 - val_loss: 0.0163 - 908ms/epoch - 50ms/step
+Epoch 54/100
+18/18 - 1s - loss: 0.0035 - val_loss: 0.0168 - 904ms/epoch - 50ms/step
+Epoch 55/100
+18/18 - 1s - loss: 0.0035 - val_loss: 0.0158 - 905ms/epoch - 50ms/step
+Epoch 56/100
+18/18 - 1s - loss: 0.0035 - val_loss: 0.0164 - 905ms/epoch - 50ms/step
+Epoch 57/100
+18/18 - 1s - loss: 0.0039 - val_loss: 0.0162 - 903ms/epoch - 50ms/step
+Epoch 58/100
+18/18 - 1s - loss: 0.0035 - val_loss: 0.0176 - 903ms/epoch - 50ms/step
+Epoch 59/100
+18/18 - 1s - loss: 0.0033 - val_loss: 0.0158 - 901ms/epoch - 50ms/step
+Epoch 60/100
+18/18 - 1s - loss: 0.0031 - val_loss: 0.0161 - 899ms/epoch - 50ms/step
+Epoch 61/100
+18/18 - 1s - loss: 0.0031 - val_loss: 0.0168 - 900ms/epoch - 50ms/step
+Epoch 62/100
+18/18 - 1s - loss: 0.0030 - val_loss: 0.0172 - 900ms/epoch - 50ms/step
+Epoch 63/100
+18/18 - 1s - loss: 0.0029 - val_loss: 0.0174 - 896ms/epoch - 50ms/step
+Epoch 64/100
+18/18 - 1s - loss: 0.0029 - val_loss: 0.0161 - 892ms/epoch - 50ms/step
+Epoch 65/100
+18/18 - 1s - loss: 0.0029 - val_loss: 0.0162 - 889ms/epoch - 49ms/step
+Epoch 66/100
+18/18 - 1s - loss: 0.0029 - val_loss: 0.0162 - 898ms/epoch - 50ms/step
+Epoch 67/100
+18/18 - 1s - loss: 0.0028 - val_loss: 0.0157 - 901ms/epoch - 50ms/step
+Epoch 68/100
+18/18 - 1s - loss: 0.0027 - val_loss: 0.0174 - 900ms/epoch - 50ms/step
+Epoch 69/100
+18/18 - 1s - loss: 0.0027 - val_loss: 0.0161 - 901ms/epoch - 50ms/step
+Epoch 70/100
+18/18 - 1s - loss: 0.0026 - val_loss: 0.0162 - 900ms/epoch - 50ms/step
+Epoch 71/100
+18/18 - 1s - loss: 0.0025 - val_loss: 0.0160 - 900ms/epoch - 50ms/step
+Epoch 72/100
+18/18 - 1s - loss: 0.0025 - val_loss: 0.0164 - 900ms/epoch - 50ms/step
+Epoch 73/100
+18/18 - 1s - loss: 0.0025 - val_loss: 0.0163 - 903ms/epoch - 50ms/step
+Epoch 74/100
+18/18 - 1s - loss: 0.0024 - val_loss: 0.0163 - 900ms/epoch - 50ms/step
+Epoch 75/100
+18/18 - 1s - loss: 0.0024 - val_loss: 0.0177 - 902ms/epoch - 50ms/step
+Epoch 76/100
+18/18 - 1s - loss: 0.0024 - val_loss: 0.0163 - 900ms/epoch - 50ms/step
+Epoch 77/100
+18/18 - 1s - loss: 0.0023 - val_loss: 0.0166 - 898ms/epoch - 50ms/step
+Epoch 78/100
+18/18 - 1s - loss: 0.0023 - val_loss: 0.0167 - 897ms/epoch - 50ms/step
+Epoch 79/100
+18/18 - 1s - loss: 0.0023 - val_loss: 0.0161 - 904ms/epoch - 50ms/step
+Epoch 80/100
+18/18 - 1s - loss: 0.0025 - val_loss: 0.0175 - 909ms/epoch - 50ms/step
+Epoch 81/100
+18/18 - 1s - loss: 0.0022 - val_loss: 0.0166 - 904ms/epoch - 50ms/step
+Epoch 82/100
+18/18 - 1s - loss: 0.0022 - val_loss: 0.0162 - 903ms/epoch - 50ms/step
+Epoch 83/100
+18/18 - 1s - loss: 0.0021 - val_loss: 0.0164 - 900ms/epoch - 50ms/step
+Epoch 84/100
+18/18 - 1s - loss: 0.0021 - val_loss: 0.0175 - 905ms/epoch - 50ms/step
+Epoch 85/100
+18/18 - 1s - loss: 0.0020 - val_loss: 0.0181 - 905ms/epoch - 50ms/step
+Epoch 86/100
+18/18 - 1s - loss: 0.0021 - val_loss: 0.0158 - 903ms/epoch - 50ms/step
+Epoch 87/100
+18/18 - 1s - loss: 0.0020 - val_loss: 0.0169 - 901ms/epoch - 50ms/step
+Epoch 88/100
+18/18 - 1s - loss: 0.0019 - val_loss: 0.0174 - 906ms/epoch - 50ms/step
+Epoch 89/100
+18/18 - 1s - loss: 0.0020 - val_loss: 0.0160 - 904ms/epoch - 50ms/step
+Epoch 90/100
+18/18 - 1s - loss: 0.0019 - val_loss: 0.0163 - 909ms/epoch - 50ms/step
+Epoch 91/100
+18/18 - 1s - loss: 0.0018 - val_loss: 0.0168 - 909ms/epoch - 50ms/step
+Epoch 92/100
+18/18 - 1s - loss: 0.0018 - val_loss: 0.0167 - 907ms/epoch - 50ms/step
+Epoch 93/100
+18/18 - 1s - loss: 0.0019 - val_loss: 0.0171 - 905ms/epoch - 50ms/step
+Epoch 94/100
+18/18 - 1s - loss: 0.0018 - val_loss: 0.0165 - 908ms/epoch - 50ms/step
+Epoch 95/100
+18/18 - 1s - loss: 0.0018 - val_loss: 0.0165 - 909ms/epoch - 50ms/step
+Epoch 96/100
+18/18 - 1s - loss: 0.0017 - val_loss: 0.0166 - 900ms/epoch - 50ms/step
+Epoch 97/100
+18/18 - 1s - loss: 0.0017 - val_loss: 0.0161 - 902ms/epoch - 50ms/step
+Epoch 98/100
+18/18 - 1s - loss: 0.0017 - val_loss: 0.0170 - 900ms/epoch - 50ms/step
+Epoch 99/100
+18/18 - 1s - loss: 0.0018 - val_loss: 0.0162 - 906ms/epoch - 50ms/step
+Model saved to .\Experiments\6years\models\mtl_i118_residual_lstm_8_2
+Training time: 1 min
+model_str_def: residual_gru_8_2
+len_stations:  23
+model is lstm or gru
+ndays:  118
+nwindows:  0
+window_size:  0
+output_shape:  (2192, 23)
+layer_type:  gru
+input shape:  944
+Model summary:
+Model: "model_24"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_25 (InputLayer)          [(None, 944)]        0           []                               
+                                                                                                  
+ reshape_24 (Reshape)           (None, 118, 8)       0           ['input_25[0][0]']               
+                                                                                                  
+ dropout_44 (Dropout)           (None, 118, 8)       0           ['reshape_24[0][0]']             
+                                                                                                  
+ permute_23 (Permute)           (None, 8, 118)       0           ['dropout_44[0][0]']             
+                                                                                                  
+ conv1d_21 (Conv1D)             (None, 8, 118)       14042       ['permute_23[0][0]']             
+                                                                                                  
+ flatten_45 (Flatten)           (None, 944)          0           ['conv1d_21[0][0]']              
+                                                                                                  
+ dense_68 (Dense)               (None, 184)          173880      ['flatten_45[0][0]']             
+                                                                                                  
+ dense_70 (Dense)               (None, 8, 184)       21896       ['permute_23[0][0]']             
+                                                                                                  
+ dropout_45 (Dropout)           (None, 184)          0           ['dense_68[0][0]']               
+                                                                                                  
+ gru_3 (GRU)                    (None, 8, 46)        32016       ['dense_70[0][0]']               
+                                                                                                  
+ dense_69 (Dense)               (None, 46)           8510        ['dropout_45[0][0]']             
+                                                                                                  
+ flatten_46 (Flatten)           (None, 368)          0           ['gru_3[0][0]']                  
+                                                                                                  
+ mlp_output (Dense)             (None, 23)           1081        ['dense_69[0][0]']               
+                                                                                                  
+ lstm_output (Dense)            (None, 23)           8487        ['flatten_46[0][0]']             
+                                                                                                  
+ res_add (Add)                  (None, 23)           0           ['mlp_output[0][0]',             
+                                                                  'lstm_output[0][0]']            
+                                                                                                  
+ res_relu (LeakyReLU)           (None, 23)           0           ['res_add[0][0]']                
+                                                                                                  
+==================================================================================================
+Total params: 259,912
+Trainable params: 245,870
+Non-trainable params: 14,042
+__________________________________________________________________________________________________
+None
+Creating new scalers
+Epoch 1/100
+18/18 - 3s - loss: 0.1391 - val_loss: 0.0691 - 3s/epoch - 149ms/step
+Epoch 2/100
+18/18 - 1s - loss: 0.0559 - val_loss: 0.0424 - 687ms/epoch - 38ms/step
+Epoch 3/100
+18/18 - 1s - loss: 0.0330 - val_loss: 0.0307 - 667ms/epoch - 37ms/step
+Epoch 4/100
+18/18 - 1s - loss: 0.0234 - val_loss: 0.0264 - 661ms/epoch - 37ms/step
+Epoch 5/100
+18/18 - 1s - loss: 0.0185 - val_loss: 0.0231 - 659ms/epoch - 37ms/step
+Epoch 6/100
+18/18 - 1s - loss: 0.0160 - val_loss: 0.0211 - 659ms/epoch - 37ms/step
+Epoch 7/100
+18/18 - 1s - loss: 0.0148 - val_loss: 0.0211 - 653ms/epoch - 36ms/step
+Epoch 8/100
+18/18 - 1s - loss: 0.0137 - val_loss: 0.0203 - 656ms/epoch - 36ms/step
+Epoch 9/100
+18/18 - 1s - loss: 0.0129 - val_loss: 0.0198 - 651ms/epoch - 36ms/step
+Epoch 10/100
+18/18 - 1s - loss: 0.0123 - val_loss: 0.0214 - 640ms/epoch - 36ms/step
+Epoch 11/100
+18/18 - 1s - loss: 0.0118 - val_loss: 0.0207 - 637ms/epoch - 35ms/step
+Epoch 12/100
+18/18 - 1s - loss: 0.0113 - val_loss: 0.0187 - 653ms/epoch - 36ms/step
+Epoch 13/100
+18/18 - 1s - loss: 0.0112 - val_loss: 0.0186 - 657ms/epoch - 36ms/step
+Epoch 14/100
+18/18 - 1s - loss: 0.0106 - val_loss: 0.0180 - 650ms/epoch - 36ms/step
+Epoch 15/100
+18/18 - 1s - loss: 0.0100 - val_loss: 0.0191 - 650ms/epoch - 36ms/step
+Epoch 16/100
+18/18 - 1s - loss: 0.0097 - val_loss: 0.0190 - 651ms/epoch - 36ms/step
+Epoch 17/100
+18/18 - 1s - loss: 0.0096 - val_loss: 0.0173 - 651ms/epoch - 36ms/step
+Epoch 18/100
+18/18 - 1s - loss: 0.0093 - val_loss: 0.0181 - 650ms/epoch - 36ms/step
+Epoch 19/100
+18/18 - 1s - loss: 0.0089 - val_loss: 0.0186 - 648ms/epoch - 36ms/step
+Epoch 20/100
+18/18 - 1s - loss: 0.0086 - val_loss: 0.0169 - 648ms/epoch - 36ms/step
+Epoch 21/100
+18/18 - 1s - loss: 0.0088 - val_loss: 0.0167 - 648ms/epoch - 36ms/step
+Epoch 22/100
+18/18 - 1s - loss: 0.0084 - val_loss: 0.0167 - 635ms/epoch - 35ms/step
+Epoch 23/100
+18/18 - 1s - loss: 0.0085 - val_loss: 0.0184 - 636ms/epoch - 35ms/step
+Epoch 24/100
+18/18 - 1s - loss: 0.0077 - val_loss: 0.0162 - 655ms/epoch - 36ms/step
+Epoch 25/100
+18/18 - 1s - loss: 0.0075 - val_loss: 0.0167 - 652ms/epoch - 36ms/step
+Epoch 26/100
+18/18 - 1s - loss: 0.0073 - val_loss: 0.0174 - 648ms/epoch - 36ms/step
+Epoch 27/100
+18/18 - 1s - loss: 0.0073 - val_loss: 0.0171 - 647ms/epoch - 36ms/step
+Epoch 28/100
+18/18 - 1s - loss: 0.0070 - val_loss: 0.0161 - 650ms/epoch - 36ms/step
+Epoch 29/100
+18/18 - 1s - loss: 0.0070 - val_loss: 0.0161 - 648ms/epoch - 36ms/step
+Epoch 30/100
+18/18 - 1s - loss: 0.0068 - val_loss: 0.0158 - 644ms/epoch - 36ms/step
+Epoch 31/100
+18/18 - 1s - loss: 0.0068 - val_loss: 0.0159 - 640ms/epoch - 36ms/step
+Epoch 32/100
+18/18 - 1s - loss: 0.0064 - val_loss: 0.0162 - 637ms/epoch - 35ms/step
+Epoch 33/100
+18/18 - 1s - loss: 0.0061 - val_loss: 0.0162 - 638ms/epoch - 35ms/step
+Epoch 34/100
+18/18 - 1s - loss: 0.0059 - val_loss: 0.0158 - 641ms/epoch - 36ms/step
+Epoch 35/100
+18/18 - 1s - loss: 0.0059 - val_loss: 0.0160 - 635ms/epoch - 35ms/step
+Epoch 36/100
+18/18 - 1s - loss: 0.0057 - val_loss: 0.0162 - 636ms/epoch - 35ms/step
+Epoch 37/100
+18/18 - 1s - loss: 0.0056 - val_loss: 0.0162 - 637ms/epoch - 35ms/step
+Epoch 38/100
+18/18 - 1s - loss: 0.0055 - val_loss: 0.0160 - 632ms/epoch - 35ms/step
+Epoch 39/100
+18/18 - 1s - loss: 0.0055 - val_loss: 0.0157 - 641ms/epoch - 36ms/step
+Epoch 40/100
+18/18 - 1s - loss: 0.0052 - val_loss: 0.0161 - 633ms/epoch - 35ms/step
+Epoch 41/100
+18/18 - 1s - loss: 0.0051 - val_loss: 0.0160 - 630ms/epoch - 35ms/step
+Epoch 42/100
+18/18 - 1s - loss: 0.0052 - val_loss: 0.0159 - 634ms/epoch - 35ms/step
+Epoch 43/100
+18/18 - 1s - loss: 0.0050 - val_loss: 0.0160 - 637ms/epoch - 35ms/step
+Epoch 44/100
+18/18 - 1s - loss: 0.0046 - val_loss: 0.0160 - 640ms/epoch - 36ms/step
+Epoch 45/100
+18/18 - 1s - loss: 0.0049 - val_loss: 0.0176 - 652ms/epoch - 36ms/step
+Epoch 46/100
+18/18 - 1s - loss: 0.0046 - val_loss: 0.0162 - 640ms/epoch - 36ms/step
+Epoch 47/100
+18/18 - 1s - loss: 0.0042 - val_loss: 0.0154 - 642ms/epoch - 36ms/step
+Epoch 48/100
+18/18 - 1s - loss: 0.0042 - val_loss: 0.0163 - 643ms/epoch - 36ms/step
+Epoch 49/100
+18/18 - 1s - loss: 0.0043 - val_loss: 0.0160 - 641ms/epoch - 36ms/step
+Epoch 50/100
+18/18 - 1s - loss: 0.0040 - val_loss: 0.0181 - 641ms/epoch - 36ms/step
+Epoch 51/100
+18/18 - 1s - loss: 0.0047 - val_loss: 0.0160 - 648ms/epoch - 36ms/step
+Epoch 52/100
+18/18 - 1s - loss: 0.0039 - val_loss: 0.0162 - 643ms/epoch - 36ms/step
+Epoch 53/100
+18/18 - 1s - loss: 0.0038 - val_loss: 0.0176 - 641ms/epoch - 36ms/step
+Epoch 54/100
+18/18 - 1s - loss: 0.0039 - val_loss: 0.0162 - 644ms/epoch - 36ms/step
+Epoch 55/100
+18/18 - 1s - loss: 0.0036 - val_loss: 0.0166 - 646ms/epoch - 36ms/step
+Epoch 56/100
+18/18 - 1s - loss: 0.0036 - val_loss: 0.0164 - 642ms/epoch - 36ms/step
+Epoch 57/100
+18/18 - 1s - loss: 0.0035 - val_loss: 0.0173 - 635ms/epoch - 35ms/step
+Epoch 58/100
+18/18 - 1s - loss: 0.0034 - val_loss: 0.0166 - 647ms/epoch - 36ms/step
+Epoch 59/100
+18/18 - 1s - loss: 0.0032 - val_loss: 0.0162 - 644ms/epoch - 36ms/step
+Epoch 60/100
+18/18 - 1s - loss: 0.0032 - val_loss: 0.0170 - 645ms/epoch - 36ms/step
+Epoch 61/100
+18/18 - 1s - loss: 0.0032 - val_loss: 0.0183 - 646ms/epoch - 36ms/step
+Epoch 62/100
+18/18 - 1s - loss: 0.0034 - val_loss: 0.0164 - 633ms/epoch - 35ms/step
+Epoch 63/100
+18/18 - 1s - loss: 0.0032 - val_loss: 0.0169 - 646ms/epoch - 36ms/step
+Epoch 64/100
+18/18 - 1s - loss: 0.0030 - val_loss: 0.0174 - 636ms/epoch - 35ms/step
+Epoch 65/100
+18/18 - 1s - loss: 0.0029 - val_loss: 0.0167 - 641ms/epoch - 36ms/step
+Epoch 66/100
+18/18 - 1s - loss: 0.0029 - val_loss: 0.0175 - 631ms/epoch - 35ms/step
+Epoch 67/100
+18/18 - 1s - loss: 0.0028 - val_loss: 0.0171 - 628ms/epoch - 35ms/step
+Epoch 68/100
+18/18 - 1s - loss: 0.0028 - val_loss: 0.0175 - 634ms/epoch - 35ms/step
+Epoch 69/100
+18/18 - 1s - loss: 0.0029 - val_loss: 0.0217 - 625ms/epoch - 35ms/step
+Epoch 70/100
+18/18 - 1s - loss: 0.0036 - val_loss: 0.0174 - 632ms/epoch - 35ms/step
+Epoch 71/100
+18/18 - 1s - loss: 0.0026 - val_loss: 0.0169 - 628ms/epoch - 35ms/step
+Epoch 72/100
+18/18 - 1s - loss: 0.0026 - val_loss: 0.0173 - 624ms/epoch - 35ms/step
+Epoch 73/100
+18/18 - 1s - loss: 0.0027 - val_loss: 0.0173 - 637ms/epoch - 35ms/step
+Epoch 74/100
+18/18 - 1s - loss: 0.0025 - val_loss: 0.0174 - 634ms/epoch - 35ms/step
+Epoch 75/100
+18/18 - 1s - loss: 0.0025 - val_loss: 0.0165 - 631ms/epoch - 35ms/step
+Epoch 76/100
+18/18 - 1s - loss: 0.0025 - val_loss: 0.0168 - 631ms/epoch - 35ms/step
+Epoch 77/100
+18/18 - 1s - loss: 0.0024 - val_loss: 0.0176 - 630ms/epoch - 35ms/step
+Epoch 78/100
+18/18 - 1s - loss: 0.0023 - val_loss: 0.0167 - 632ms/epoch - 35ms/step
+Epoch 79/100
+18/18 - 1s - loss: 0.0023 - val_loss: 0.0177 - 636ms/epoch - 35ms/step
+Epoch 80/100
+18/18 - 1s - loss: 0.0022 - val_loss: 0.0165 - 634ms/epoch - 35ms/step
+Epoch 81/100
+18/18 - 1s - loss: 0.0022 - val_loss: 0.0167 - 641ms/epoch - 36ms/step
+Epoch 82/100
+18/18 - 1s - loss: 0.0022 - val_loss: 0.0190 - 640ms/epoch - 36ms/step
+Epoch 83/100
+18/18 - 1s - loss: 0.0029 - val_loss: 0.0171 - 639ms/epoch - 35ms/step
+Epoch 84/100
+18/18 - 1s - loss: 0.0023 - val_loss: 0.0173 - 636ms/epoch - 35ms/step
+Epoch 85/100
+18/18 - 1s - loss: 0.0021 - val_loss: 0.0165 - 636ms/epoch - 35ms/step
+Epoch 86/100
+18/18 - 1s - loss: 0.0023 - val_loss: 0.0186 - 628ms/epoch - 35ms/step
+Epoch 87/100
+18/18 - 1s - loss: 0.0023 - val_loss: 0.0174 - 625ms/epoch - 35ms/step
+Epoch 88/100
+18/18 - 1s - loss: 0.0022 - val_loss: 0.0167 - 621ms/epoch - 35ms/step
+Epoch 89/100
+18/18 - 1s - loss: 0.0019 - val_loss: 0.0165 - 634ms/epoch - 35ms/step
+Epoch 90/100
+18/18 - 1s - loss: 0.0020 - val_loss: 0.0172 - 639ms/epoch - 36ms/step
+Epoch 91/100
+18/18 - 1s - loss: 0.0019 - val_loss: 0.0168 - 641ms/epoch - 36ms/step
+Epoch 92/100
+18/18 - 1s - loss: 0.0019 - val_loss: 0.0164 - 630ms/epoch - 35ms/step
+Epoch 93/100
+18/18 - 1s - loss: 0.0020 - val_loss: 0.0164 - 629ms/epoch - 35ms/step
+Epoch 94/100
+18/18 - 1s - loss: 0.0020 - val_loss: 0.0174 - 619ms/epoch - 34ms/step
+Epoch 95/100
+18/18 - 1s - loss: 0.0019 - val_loss: 0.0178 - 635ms/epoch - 35ms/step
+Epoch 96/100
+18/18 - 1s - loss: 0.0018 - val_loss: 0.0169 - 638ms/epoch - 35ms/step
+Epoch 97/100
+18/18 - 1s - loss: 0.0018 - val_loss: 0.0180 - 644ms/epoch - 36ms/step
+Model saved to .\Experiments\6years\models\mtl_i118_residual_gru_8_2
+Training time: 1 min
+model_str_def: transformer
+len_stations:  23
+Model summary:
+Model: "model_25"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_26 (InputLayer)          [(None, 944)]        0           []                               
+                                                                                                  
+ reshape_25 (Reshape)           (None, 118, 8)       0           ['input_26[0][0]']               
+                                                                                                  
+ dropout_46 (Dropout)           (None, 118, 8)       0           ['reshape_25[0][0]']             
+                                                                                                  
+ layer_normalization (LayerNorm  (None, 118, 8)      16          ['dropout_46[0][0]']             
+ alization)                                                                                       
+                                                                                                  
+ multi_head_attention (MultiHea  (None, 118, 8)      35848       ['layer_normalization[0][0]',    
+ dAttention)                                                      'layer_normalization[0][0]']    
+                                                                                                  
+ dropout_47 (Dropout)           (None, 118, 8)       0           ['multi_head_attention[0][0]']   
+                                                                                                  
+ tf.__operators__.add (TFOpLamb  (None, 118, 8)      0           ['dropout_47[0][0]',             
+ da)                                                              'dropout_46[0][0]']             
+                                                                                                  
+ layer_normalization_1 (LayerNo  (None, 118, 8)      16          ['tf.__operators__.add[0][0]']   
+ rmalization)                                                                                     
+                                                                                                  
+ conv1d_22 (Conv1D)             (None, 118, 4)       36          ['layer_normalization_1[0][0]']  
+                                                                                                  
+ dropout_48 (Dropout)           (None, 118, 4)       0           ['conv1d_22[0][0]']              
+                                                                                                  
+ conv1d_23 (Conv1D)             (None, 118, 8)       40          ['dropout_48[0][0]']             
+                                                                                                  
+ tf.__operators__.add_1 (TFOpLa  (None, 118, 8)      0           ['conv1d_23[0][0]',              
+ mbda)                                                            'tf.__operators__.add[0][0]']   
+                                                                                                  
+ layer_normalization_2 (LayerNo  (None, 118, 8)      16          ['tf.__operators__.add_1[0][0]'] 
+ rmalization)                                                                                     
+                                                                                                  
+ multi_head_attention_1 (MultiH  (None, 118, 8)      35848       ['layer_normalization_2[0][0]',  
+ eadAttention)                                                    'layer_normalization_2[0][0]']  
+                                                                                                  
+ dropout_49 (Dropout)           (None, 118, 8)       0           ['multi_head_attention_1[0][0]'] 
+                                                                                                  
+ tf.__operators__.add_2 (TFOpLa  (None, 118, 8)      0           ['dropout_49[0][0]',             
+ mbda)                                                            'tf.__operators__.add_1[0][0]'] 
+                                                                                                  
+ layer_normalization_3 (LayerNo  (None, 118, 8)      16          ['tf.__operators__.add_2[0][0]'] 
+ rmalization)                                                                                     
+                                                                                                  
+ conv1d_24 (Conv1D)             (None, 118, 4)       36          ['layer_normalization_3[0][0]']  
+                                                                                                  
+ dropout_50 (Dropout)           (None, 118, 4)       0           ['conv1d_24[0][0]']              
+                                                                                                  
+ conv1d_25 (Conv1D)             (None, 118, 8)       40          ['dropout_50[0][0]']             
+                                                                                                  
+ tf.__operators__.add_3 (TFOpLa  (None, 118, 8)      0           ['conv1d_25[0][0]',              
+ mbda)                                                            'tf.__operators__.add_2[0][0]'] 
+                                                                                                  
+ layer_normalization_4 (LayerNo  (None, 118, 8)      16          ['tf.__operators__.add_3[0][0]'] 
+ rmalization)                                                                                     
+                                                                                                  
+ multi_head_attention_2 (MultiH  (None, 118, 8)      35848       ['layer_normalization_4[0][0]',  
+ eadAttention)                                                    'layer_normalization_4[0][0]']  
+                                                                                                  
+ dropout_51 (Dropout)           (None, 118, 8)       0           ['multi_head_attention_2[0][0]'] 
+                                                                                                  
+ tf.__operators__.add_4 (TFOpLa  (None, 118, 8)      0           ['dropout_51[0][0]',             
+ mbda)                                                            'tf.__operators__.add_3[0][0]'] 
+                                                                                                  
+ layer_normalization_5 (LayerNo  (None, 118, 8)      16          ['tf.__operators__.add_4[0][0]'] 
+ rmalization)                                                                                     
+                                                                                                  
+ conv1d_26 (Conv1D)             (None, 118, 4)       36          ['layer_normalization_5[0][0]']  
+                                                                                                  
+ dropout_52 (Dropout)           (None, 118, 4)       0           ['conv1d_26[0][0]']              
+                                                                                                  
+ conv1d_27 (Conv1D)             (None, 118, 8)       40          ['dropout_52[0][0]']             
+                                                                                                  
+ tf.__operators__.add_5 (TFOpLa  (None, 118, 8)      0           ['conv1d_27[0][0]',              
+ mbda)                                                            'tf.__operators__.add_4[0][0]'] 
+                                                                                                  
+ layer_normalization_6 (LayerNo  (None, 118, 8)      16          ['tf.__operators__.add_5[0][0]'] 
+ rmalization)                                                                                     
+                                                                                                  
+ multi_head_attention_3 (MultiH  (None, 118, 8)      35848       ['layer_normalization_6[0][0]',  
+ eadAttention)                                                    'layer_normalization_6[0][0]']  
+                                                                                                  
+ dropout_53 (Dropout)           (None, 118, 8)       0           ['multi_head_attention_3[0][0]'] 
+                                                                                                  
+ tf.__operators__.add_6 (TFOpLa  (None, 118, 8)      0           ['dropout_53[0][0]',             
+ mbda)                                                            'tf.__operators__.add_5[0][0]'] 
+                                                                                                  
+ layer_normalization_7 (LayerNo  (None, 118, 8)      16          ['tf.__operators__.add_6[0][0]'] 
+ rmalization)                                                                                     
+                                                                                                  
+ conv1d_28 (Conv1D)             (None, 118, 4)       36          ['layer_normalization_7[0][0]']  
+                                                                                                  
+ dropout_54 (Dropout)           (None, 118, 4)       0           ['conv1d_28[0][0]']              
+                                                                                                  
+ conv1d_29 (Conv1D)             (None, 118, 8)       40          ['dropout_54[0][0]']             
+                                                                                                  
+ tf.__operators__.add_7 (TFOpLa  (None, 118, 8)      0           ['conv1d_29[0][0]',              
+ mbda)                                                            'tf.__operators__.add_6[0][0]'] 
+                                                                                                  
+ global_average_pooling1d (Glob  (None, 118)         0           ['tf.__operators__.add_7[0][0]'] 
+ alAveragePooling1D)                                                                              
+                                                                                                  
+ dense_71 (Dense)               (None, 128)          15232       ['global_average_pooling1d[0][0]'
+                                                                 ]                                
+                                                                                                  
+ dropout_55 (Dropout)           (None, 128)          0           ['dense_71[0][0]']               
+                                                                                                  
+ dense_72 (Dense)               (None, 23)           2967        ['dropout_55[0][0]']             
+                                                                                                  
+ res_relu (LeakyReLU)           (None, 23)           0           ['dense_72[0][0]']               
+                                                                                                  
+==================================================================================================
+Total params: 162,023
+Trainable params: 162,023
+Non-trainable params: 0
+__________________________________________________________________________________________________
+None
+Creating new scalers
+Epoch 1/100
+18/18 - 149s - loss: 0.1348 - val_loss: 0.0607 - 149s/epoch - 8s/step
+Epoch 2/100
+18/18 - 135s - loss: 0.0723 - val_loss: 0.0398 - 135s/epoch - 8s/step
+Epoch 3/100
+18/18 - 139s - loss: 0.0517 - val_loss: 0.0388 - 139s/epoch - 8s/step
+Epoch 4/100
+18/18 - 137s - loss: 0.0442 - val_loss: 0.0511 - 137s/epoch - 8s/step
+Epoch 5/100
+18/18 - 137s - loss: 0.0419 - val_loss: 0.0443 - 137s/epoch - 8s/step
+Epoch 6/100
+18/18 - 139s - loss: 0.0396 - val_loss: 0.0297 - 139s/epoch - 8s/step
+Epoch 7/100
+18/18 - 139s - loss: 0.0350 - val_loss: 0.0377 - 139s/epoch - 8s/step
+Epoch 8/100
+18/18 - 137s - loss: 0.0347 - val_loss: 0.0399 - 137s/epoch - 8s/step
+Epoch 9/100
+18/18 - 138s - loss: 0.0318 - val_loss: 0.0316 - 138s/epoch - 8s/step
+Epoch 10/100
+18/18 - 139s - loss: 0.0284 - val_loss: 0.0317 - 139s/epoch - 8s/step
+Epoch 11/100
+18/18 - 138s - loss: 0.0254 - val_loss: 0.0295 - 138s/epoch - 8s/step
+Epoch 12/100
+18/18 - 139s - loss: 0.0241 - val_loss: 0.0326 - 139s/epoch - 8s/step
+Epoch 13/100
+18/18 - 139s - loss: 0.0234 - val_loss: 0.0286 - 139s/epoch - 8s/step
+Epoch 14/100
+18/18 - 138s - loss: 0.0224 - val_loss: 0.0291 - 138s/epoch - 8s/step
+Epoch 15/100
+18/18 - 137s - loss: 0.0222 - val_loss: 0.0283 - 137s/epoch - 8s/step
+Epoch 16/100
+18/18 - 140s - loss: 0.0209 - val_loss: 0.0289 - 140s/epoch - 8s/step
+Epoch 17/100
+18/18 - 140s - loss: 0.0214 - val_loss: 0.0291 - 140s/epoch - 8s/step
+Epoch 18/100
+18/18 - 141s - loss: 0.0192 - val_loss: 0.0287 - 141s/epoch - 8s/step
+Epoch 19/100
+18/18 - 144s - loss: 0.0200 - val_loss: 0.0346 - 144s/epoch - 8s/step
+Epoch 20/100
+18/18 - 145s - loss: 0.0263 - val_loss: 0.0340 - 145s/epoch - 8s/step
+Epoch 21/100
+18/18 - 145s - loss: 0.0199 - val_loss: 0.0311 - 145s/epoch - 8s/step
+Epoch 22/100
+18/18 - 145s - loss: 0.0169 - val_loss: 0.0361 - 145s/epoch - 8s/step
+Epoch 23/100
+18/18 - 145s - loss: 0.0173 - val_loss: 0.0335 - 145s/epoch - 8s/step
+Epoch 24/100
+18/18 - 144s - loss: 0.0185 - val_loss: 0.0314 - 144s/epoch - 8s/step
+Epoch 25/100
+18/18 - 143s - loss: 0.0164 - val_loss: 0.0310 - 143s/epoch - 8s/step
+Epoch 26/100
+18/18 - 141s - loss: 0.0156 - val_loss: 0.0335 - 141s/epoch - 8s/step
+Epoch 27/100
+18/18 - 141s - loss: 0.0152 - val_loss: 0.0313 - 141s/epoch - 8s/step
+Epoch 28/100
+18/18 - 141s - loss: 0.0150 - val_loss: 0.0353 - 141s/epoch - 8s/step
+Epoch 29/100
+18/18 - 141s - loss: 0.0146 - val_loss: 0.0349 - 141s/epoch - 8s/step
+Epoch 30/100
+18/18 - 141s - loss: 0.0135 - val_loss: 0.0387 - 141s/epoch - 8s/step
+Epoch 31/100
+18/18 - 140s - loss: 0.0145 - val_loss: 0.0371 - 140s/epoch - 8s/step
+Epoch 32/100
+18/18 - 139s - loss: 0.0144 - val_loss: 0.0324 - 139s/epoch - 8s/step
+Epoch 33/100
+18/18 - 128s - loss: 0.0147 - val_loss: 0.0354 - 128s/epoch - 7s/step
+Epoch 34/100
+18/18 - 114s - loss: 0.0138 - val_loss: 0.0310 - 114s/epoch - 6s/step
+Epoch 35/100
+18/18 - 114s - loss: 0.0135 - val_loss: 0.0438 - 114s/epoch - 6s/step
+Epoch 36/100
+18/18 - 114s - loss: 0.0149 - val_loss: 0.0290 - 114s/epoch - 6s/step
+Epoch 37/100
+18/18 - 114s - loss: 0.0145 - val_loss: 0.0322 - 114s/epoch - 6s/step
+Epoch 38/100
+18/18 - 114s - loss: 0.0139 - val_loss: 0.0377 - 114s/epoch - 6s/step
+Epoch 39/100
+18/18 - 114s - loss: 0.0130 - val_loss: 0.0327 - 114s/epoch - 6s/step
+Epoch 40/100
+18/18 - 115s - loss: 0.0128 - val_loss: 0.0387 - 115s/epoch - 6s/step
+Epoch 41/100
+18/18 - 115s - loss: 0.0125 - val_loss: 0.0338 - 115s/epoch - 6s/step
+Epoch 42/100
+18/18 - 114s - loss: 0.0120 - val_loss: 0.0326 - 114s/epoch - 6s/step
+Epoch 43/100
+18/18 - 114s - loss: 0.0120 - val_loss: 0.0351 - 114s/epoch - 6s/step
+Epoch 44/100
+18/18 - 114s - loss: 0.0143 - val_loss: 0.0328 - 114s/epoch - 6s/step
+Epoch 45/100
+18/18 - 114s - loss: 0.0123 - val_loss: 0.0384 - 114s/epoch - 6s/step
+Epoch 46/100
+18/18 - 113s - loss: 0.0130 - val_loss: 0.0338 - 113s/epoch - 6s/step
+Epoch 47/100
+18/18 - 113s - loss: 0.0139 - val_loss: 0.0341 - 113s/epoch - 6s/step
+Epoch 48/100
+18/18 - 114s - loss: 0.0119 - val_loss: 0.0343 - 114s/epoch - 6s/step
+Epoch 49/100
+18/18 - 115s - loss: 0.0119 - val_loss: 0.0293 - 115s/epoch - 6s/step
+Epoch 50/100
+18/18 - 115s - loss: 0.0116 - val_loss: 0.0318 - 115s/epoch - 6s/step
+Epoch 51/100
+18/18 - 114s - loss: 0.0119 - val_loss: 0.0304 - 114s/epoch - 6s/step
+Epoch 52/100
+18/18 - 114s - loss: 0.0135 - val_loss: 0.0319 - 114s/epoch - 6s/step
+Epoch 53/100
+18/18 - 115s - loss: 0.0115 - val_loss: 0.0348 - 115s/epoch - 6s/step
+Epoch 54/100
+18/18 - 115s - loss: 0.0117 - val_loss: 0.0402 - 115s/epoch - 6s/step
+Epoch 55/100
+18/18 - 114s - loss: 0.0113 - val_loss: 0.0328 - 114s/epoch - 6s/step
+Epoch 56/100
+18/18 - 114s - loss: 0.0109 - val_loss: 0.0317 - 114s/epoch - 6s/step
+Epoch 57/100
+18/18 - 114s - loss: 0.0110 - val_loss: 0.0314 - 114s/epoch - 6s/step
+Epoch 58/100
+18/18 - 115s - loss: 0.0108 - val_loss: 0.0416 - 115s/epoch - 6s/step
+Epoch 59/100
+18/18 - 115s - loss: 0.0119 - val_loss: 0.0322 - 115s/epoch - 6s/step
+Epoch 60/100
+18/18 - 115s - loss: 0.0110 - val_loss: 0.0331 - 115s/epoch - 6s/step
+Epoch 61/100
+18/18 - 114s - loss: 0.0105 - val_loss: 0.0383 - 114s/epoch - 6s/step
+Epoch 62/100
+18/18 - 114s - loss: 0.0102 - val_loss: 0.0384 - 114s/epoch - 6s/step
+Epoch 63/100
+18/18 - 115s - loss: 0.0104 - val_loss: 0.0352 - 115s/epoch - 6s/step
+Epoch 64/100
+18/18 - 115s - loss: 0.0105 - val_loss: 0.0324 - 115s/epoch - 6s/step
+Epoch 65/100
+18/18 - 115s - loss: 0.0105 - val_loss: 0.0298 - 115s/epoch - 6s/step
+Model saved to .\Experiments\6years\models\mtl_i118_transformer
+Training time: 138 min
+model_str_def: lstm8_f_o1
+len_stations:  23
+layer_strings:['i118', 'lstm8', 'f', 'o1']
+Model summary:
+Model: "model_26"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_27 (InputLayer)       [(None, 944)]             0         
+                                                                 
+ reshape_26 (Reshape)        (None, 118, 8)            0         
+                                                                 
+ permute_24 (Permute)        (None, 8, 118)            0         
+                                                                 
+ lstm_20 (LSTM)              (None, 184)               223008    
+                                                                 
+ flatten_47 (Flatten)        (None, 184)               0         
+                                                                 
+ dense_73 (Dense)            (None, 23)                4255      
+                                                                 
+=================================================================
+Total params: 227,263
+Trainable params: 227,263
+Non-trainable params: 0
+_________________________________________________________________
+None
+Creating new scalers
+Epoch 1/100
+18/18 - 2s - loss: 0.1169 - val_loss: 0.0542 - 2s/epoch - 114ms/step
+Epoch 2/100
+18/18 - 1s - loss: 0.0586 - val_loss: 0.0491 - 804ms/epoch - 45ms/step
+Epoch 3/100
+18/18 - 1s - loss: 0.0504 - val_loss: 0.0473 - 804ms/epoch - 45ms/step
+Epoch 4/100
+18/18 - 1s - loss: 0.0460 - val_loss: 0.0445 - 807ms/epoch - 45ms/step
+Epoch 5/100
+18/18 - 1s - loss: 0.0426 - val_loss: 0.0438 - 801ms/epoch - 45ms/step
+Epoch 6/100
+18/18 - 1s - loss: 0.0403 - val_loss: 0.0414 - 803ms/epoch - 45ms/step
+Epoch 7/100
+18/18 - 1s - loss: 0.0379 - val_loss: 0.0421 - 801ms/epoch - 45ms/step
+Epoch 8/100
+18/18 - 1s - loss: 0.0365 - val_loss: 0.0399 - 807ms/epoch - 45ms/step
+Epoch 9/100
+18/18 - 1s - loss: 0.0345 - val_loss: 0.0382 - 803ms/epoch - 45ms/step
+Epoch 10/100
+18/18 - 1s - loss: 0.0328 - val_loss: 0.0391 - 796ms/epoch - 44ms/step
+Epoch 11/100
+18/18 - 1s - loss: 0.0315 - val_loss: 0.0400 - 798ms/epoch - 44ms/step
+Epoch 12/100
+18/18 - 1s - loss: 0.0309 - val_loss: 0.0371 - 797ms/epoch - 44ms/step
+Epoch 13/100
+18/18 - 1s - loss: 0.0296 - val_loss: 0.0350 - 798ms/epoch - 44ms/step
+Epoch 14/100
+18/18 - 1s - loss: 0.0277 - val_loss: 0.0351 - 800ms/epoch - 44ms/step
+Epoch 15/100
+18/18 - 1s - loss: 0.0271 - val_loss: 0.0396 - 797ms/epoch - 44ms/step
+Epoch 16/100
+18/18 - 1s - loss: 0.0260 - val_loss: 0.0346 - 800ms/epoch - 44ms/step
+Epoch 17/100
+18/18 - 1s - loss: 0.0247 - val_loss: 0.0323 - 797ms/epoch - 44ms/step
+Epoch 18/100
+18/18 - 1s - loss: 0.0246 - val_loss: 0.0373 - 802ms/epoch - 45ms/step
+Epoch 19/100
+18/18 - 1s - loss: 0.0232 - val_loss: 0.0522 - 800ms/epoch - 44ms/step
+Epoch 20/100
+18/18 - 1s - loss: 0.0240 - val_loss: 0.0318 - 805ms/epoch - 45ms/step
+Epoch 21/100
+18/18 - 1s - loss: 0.0225 - val_loss: 0.0313 - 800ms/epoch - 44ms/step
+Epoch 22/100
+18/18 - 1s - loss: 0.0223 - val_loss: 0.0322 - 802ms/epoch - 45ms/step
+Epoch 23/100
+18/18 - 1s - loss: 0.0208 - val_loss: 0.0356 - 801ms/epoch - 45ms/step
+Epoch 24/100
+18/18 - 1s - loss: 0.0202 - val_loss: 0.0346 - 801ms/epoch - 44ms/step
+Epoch 25/100
+18/18 - 1s - loss: 0.0198 - val_loss: 0.0339 - 802ms/epoch - 45ms/step
+Epoch 26/100
+18/18 - 1s - loss: 0.0188 - val_loss: 0.0316 - 798ms/epoch - 44ms/step
+Epoch 27/100
+18/18 - 1s - loss: 0.0186 - val_loss: 0.0300 - 808ms/epoch - 45ms/step
+Epoch 28/100
+18/18 - 1s - loss: 0.0179 - val_loss: 0.0273 - 797ms/epoch - 44ms/step
+Epoch 29/100
+18/18 - 1s - loss: 0.0181 - val_loss: 0.0267 - 798ms/epoch - 44ms/step
+Epoch 30/100
+18/18 - 1s - loss: 0.0179 - val_loss: 0.0292 - 796ms/epoch - 44ms/step
+Epoch 31/100
+18/18 - 1s - loss: 0.0167 - val_loss: 0.0323 - 801ms/epoch - 44ms/step
+Epoch 32/100
+18/18 - 1s - loss: 0.0164 - val_loss: 0.0297 - 798ms/epoch - 44ms/step
+Epoch 33/100
+18/18 - 1s - loss: 0.0163 - val_loss: 0.0247 - 796ms/epoch - 44ms/step
+Epoch 34/100
+18/18 - 1s - loss: 0.0161 - val_loss: 0.0252 - 804ms/epoch - 45ms/step
+Epoch 35/100
+18/18 - 1s - loss: 0.0154 - val_loss: 0.0324 - 817ms/epoch - 45ms/step
+Epoch 36/100
+18/18 - 1s - loss: 0.0157 - val_loss: 0.0288 - 819ms/epoch - 45ms/step
+Epoch 37/100
+18/18 - 1s - loss: 0.0152 - val_loss: 0.0267 - 817ms/epoch - 45ms/step
+Epoch 38/100
+18/18 - 1s - loss: 0.0146 - val_loss: 0.0245 - 806ms/epoch - 45ms/step
+Epoch 39/100
+18/18 - 1s - loss: 0.0149 - val_loss: 0.0236 - 799ms/epoch - 44ms/step
+Epoch 40/100
+18/18 - 1s - loss: 0.0154 - val_loss: 0.0270 - 802ms/epoch - 45ms/step
+Epoch 41/100
+18/18 - 1s - loss: 0.0139 - val_loss: 0.0238 - 802ms/epoch - 45ms/step
+Epoch 42/100
+18/18 - 1s - loss: 0.0135 - val_loss: 0.0230 - 801ms/epoch - 45ms/step
+Epoch 43/100
+18/18 - 1s - loss: 0.0136 - val_loss: 0.0303 - 795ms/epoch - 44ms/step
+Epoch 44/100
+18/18 - 1s - loss: 0.0133 - val_loss: 0.0241 - 800ms/epoch - 44ms/step
+Epoch 45/100
+18/18 - 1s - loss: 0.0130 - val_loss: 0.0228 - 796ms/epoch - 44ms/step
+Epoch 46/100
+18/18 - 1s - loss: 0.0126 - val_loss: 0.0244 - 799ms/epoch - 44ms/step
+Epoch 47/100
+18/18 - 1s - loss: 0.0125 - val_loss: 0.0228 - 800ms/epoch - 44ms/step
+Epoch 48/100
+18/18 - 1s - loss: 0.0127 - val_loss: 0.0255 - 795ms/epoch - 44ms/step
+Epoch 49/100
+18/18 - 1s - loss: 0.0122 - val_loss: 0.0282 - 804ms/epoch - 45ms/step
+Epoch 50/100
+18/18 - 1s - loss: 0.0125 - val_loss: 0.0222 - 811ms/epoch - 45ms/step
+Epoch 51/100
+18/18 - 1s - loss: 0.0118 - val_loss: 0.0224 - 806ms/epoch - 45ms/step
+Epoch 52/100
+18/18 - 1s - loss: 0.0114 - val_loss: 0.0234 - 850ms/epoch - 47ms/step
+Epoch 53/100
+18/18 - 1s - loss: 0.0113 - val_loss: 0.0218 - 797ms/epoch - 44ms/step
+Epoch 54/100
+18/18 - 1s - loss: 0.0110 - val_loss: 0.0212 - 801ms/epoch - 45ms/step
+Epoch 55/100
+18/18 - 1s - loss: 0.0114 - val_loss: 0.0253 - 800ms/epoch - 44ms/step
+Epoch 56/100
+18/18 - 1s - loss: 0.0111 - val_loss: 0.0244 - 797ms/epoch - 44ms/step
+Epoch 57/100
+18/18 - 1s - loss: 0.0106 - val_loss: 0.0220 - 804ms/epoch - 45ms/step
+Epoch 58/100
+18/18 - 1s - loss: 0.0105 - val_loss: 0.0239 - 802ms/epoch - 45ms/step
+Epoch 59/100
+18/18 - 1s - loss: 0.0107 - val_loss: 0.0218 - 805ms/epoch - 45ms/step
+Epoch 60/100
+18/18 - 1s - loss: 0.0106 - val_loss: 0.0216 - 800ms/epoch - 44ms/step
+Epoch 61/100
+18/18 - 1s - loss: 0.0101 - val_loss: 0.0236 - 803ms/epoch - 45ms/step
+Epoch 62/100
+18/18 - 1s - loss: 0.0098 - val_loss: 0.0213 - 798ms/epoch - 44ms/step
+Epoch 63/100
+18/18 - 1s - loss: 0.0097 - val_loss: 0.0205 - 802ms/epoch - 45ms/step
+Epoch 64/100
+18/18 - 1s - loss: 0.0095 - val_loss: 0.0211 - 805ms/epoch - 45ms/step
+Epoch 65/100
+18/18 - 1s - loss: 0.0096 - val_loss: 0.0204 - 805ms/epoch - 45ms/step
+Epoch 66/100
+18/18 - 1s - loss: 0.0092 - val_loss: 0.0202 - 795ms/epoch - 44ms/step
+Epoch 67/100
+18/18 - 1s - loss: 0.0093 - val_loss: 0.0215 - 805ms/epoch - 45ms/step
+Epoch 68/100
+18/18 - 1s - loss: 0.0091 - val_loss: 0.0202 - 803ms/epoch - 45ms/step
+Epoch 69/100
+18/18 - 1s - loss: 0.0091 - val_loss: 0.0207 - 801ms/epoch - 45ms/step
+Epoch 70/100
+18/18 - 1s - loss: 0.0090 - val_loss: 0.0231 - 797ms/epoch - 44ms/step
+Epoch 71/100
+18/18 - 1s - loss: 0.0091 - val_loss: 0.0215 - 794ms/epoch - 44ms/step
+Epoch 72/100
+18/18 - 1s - loss: 0.0087 - val_loss: 0.0214 - 797ms/epoch - 44ms/step
+Epoch 73/100
+18/18 - 1s - loss: 0.0084 - val_loss: 0.0214 - 794ms/epoch - 44ms/step
+Epoch 74/100
+18/18 - 1s - loss: 0.0082 - val_loss: 0.0205 - 795ms/epoch - 44ms/step
+Epoch 75/100
+18/18 - 1s - loss: 0.0081 - val_loss: 0.0231 - 809ms/epoch - 45ms/step
+Epoch 76/100
+18/18 - 1s - loss: 0.0083 - val_loss: 0.0198 - 800ms/epoch - 44ms/step
+Epoch 77/100
+18/18 - 1s - loss: 0.0080 - val_loss: 0.0192 - 797ms/epoch - 44ms/step
+Epoch 78/100
+18/18 - 1s - loss: 0.0080 - val_loss: 0.0203 - 797ms/epoch - 44ms/step
+Epoch 79/100
+18/18 - 1s - loss: 0.0077 - val_loss: 0.0228 - 798ms/epoch - 44ms/step
+Epoch 80/100
+18/18 - 1s - loss: 0.0078 - val_loss: 0.0225 - 806ms/epoch - 45ms/step
+Epoch 81/100
+18/18 - 1s - loss: 0.0078 - val_loss: 0.0203 - 800ms/epoch - 44ms/step
+Epoch 82/100
+18/18 - 1s - loss: 0.0075 - val_loss: 0.0226 - 803ms/epoch - 45ms/step
+Epoch 83/100
+18/18 - 1s - loss: 0.0075 - val_loss: 0.0189 - 801ms/epoch - 45ms/step
+Epoch 84/100
+18/18 - 1s - loss: 0.0073 - val_loss: 0.0198 - 805ms/epoch - 45ms/step
+Epoch 85/100
+18/18 - 1s - loss: 0.0071 - val_loss: 0.0224 - 807ms/epoch - 45ms/step
+Epoch 86/100
+18/18 - 1s - loss: 0.0072 - val_loss: 0.0197 - 804ms/epoch - 45ms/step
+Epoch 87/100
+18/18 - 1s - loss: 0.0069 - val_loss: 0.0195 - 801ms/epoch - 45ms/step
+Epoch 88/100
+18/18 - 1s - loss: 0.0069 - val_loss: 0.0210 - 805ms/epoch - 45ms/step
+Epoch 89/100
+18/18 - 1s - loss: 0.0068 - val_loss: 0.0192 - 802ms/epoch - 45ms/step
+Epoch 90/100
+18/18 - 1s - loss: 0.0070 - val_loss: 0.0213 - 802ms/epoch - 45ms/step
+Epoch 91/100
+18/18 - 1s - loss: 0.0066 - val_loss: 0.0195 - 801ms/epoch - 45ms/step
+Epoch 92/100
+18/18 - 1s - loss: 0.0066 - val_loss: 0.0216 - 802ms/epoch - 45ms/step
+Epoch 93/100
+18/18 - 1s - loss: 0.0066 - val_loss: 0.0191 - 803ms/epoch - 45ms/step
+Epoch 94/100
+18/18 - 1s - loss: 0.0063 - val_loss: 0.0191 - 800ms/epoch - 44ms/step
+Epoch 95/100
+18/18 - 1s - loss: 0.0065 - val_loss: 0.0200 - 804ms/epoch - 45ms/step
+Epoch 96/100
+18/18 - 1s - loss: 0.0063 - val_loss: 0.0204 - 804ms/epoch - 45ms/step
+Epoch 97/100
+18/18 - 1s - loss: 0.0062 - val_loss: 0.0238 - 802ms/epoch - 45ms/step
+Epoch 98/100
+18/18 - 1s - loss: 0.0068 - val_loss: 0.0200 - 799ms/epoch - 44ms/step
+Epoch 99/100
+18/18 - 1s - loss: 0.0064 - val_loss: 0.0201 - 805ms/epoch - 45ms/step
+Epoch 100/100
+18/18 - 1s - loss: 0.0059 - val_loss: 0.0202 - 814ms/epoch - 45ms/step
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mFileNotFoundError[0m                         Traceback (most recent call last)
+Cell [1;32mIn[58], line 51[0m
+[0;32m     49[0m [38;5;28;01mif[39;00m save_results:
+[0;32m     50[0m     model_savepath [38;5;241m=[39m os[38;5;241m.[39mpath[38;5;241m.[39mjoin(local_root_path, [38;5;124m"[39m[38;5;124mExperiments[39m[38;5;124m"[39m, experiment, [38;5;124m'[39m[38;5;124mmodels[39m[38;5;124m'[39m, model_path_prefix)
+[1;32m---> 51[0m     [43mannutils[49m[38;5;241;43m.[39;49m[43msave_model[49m[43m([49m[43mmodel_savepath[49m[43m,[49m[43m [49m[43mmodel[49m[43m,[49m[43m [49m[43mxscaler[49m[43m,[49m[43m [49m[43myscaler[49m[43m)[49m
+[0;32m     52[0m     [38;5;28mprint[39m([38;5;124m'[39m[38;5;124mModel saved to [39m[38;5;132;01m%s[39;00m[38;5;124m'[39m [38;5;241m%[39m model_savepath)
+[0;32m     53[0m [38;5;28mprint[39m([38;5;124m'[39m[38;5;124mTraining time: [39m[38;5;132;01m%d[39;00m[38;5;124m min[39m[38;5;124m'[39m [38;5;241m%[39m ((time[38;5;241m.[39mtime() [38;5;241m-[39m start) [38;5;241m/[39m [38;5;241m60[39m))
+
+File [1;32m~\Documents\SalinityMLWorkshop_DMS_UCD-main\annutils.py:243[0m, in [0;36msave_model[1;34m(location, model, xscaler, yscaler)[0m
+[0;32m    239[0m [38;5;28;01mdef[39;00m [38;5;21msave_model[39m(location, model, xscaler, yscaler):
+[0;32m    240[0m [38;5;250m    [39m[38;5;124;03m'''[39;00m
+[0;32m    241[0m [38;5;124;03m    save keras model and scaling to files[39;00m
+[0;32m    242[0m [38;5;124;03m    '''[39;00m
+[1;32m--> 243[0m     [43mjoblib[49m[38;5;241;43m.[39;49m[43mdump[49m[43m([49m[43m([49m[43mxscaler[49m[43m,[49m[43myscaler[49m[43m)[49m[43m,[49m[38;5;124;43m'[39;49m[38;5;132;43;01m%s[39;49;00m[38;5;124;43m_xyscaler.dump[39;49m[38;5;124;43m'[39;49m[38;5;241;43m%[39;49m[43mlocation[49m[43m)[49m
+[0;32m    244[0m     model[38;5;241m.[39msave([38;5;124m'[39m[38;5;132;01m%s[39;00m[38;5;124m.h5[39m[38;5;124m'[39m[38;5;241m%[39mlocation)
+
+File [1;32m~\miniconda3\envs\Salinity_DWR\lib\site-packages\joblib\numpy_pickle.py:552[0m, in [0;36mdump[1;34m(value, filename, compress, protocol, cache_size)[0m
+[0;32m    550[0m         NumpyPickler(f, protocol[38;5;241m=[39mprotocol)[38;5;241m.[39mdump(value)
+[0;32m    551[0m [38;5;28;01melif[39;00m is_filename:
+[1;32m--> 552[0m     [38;5;28;01mwith[39;00m [38;5;28;43mopen[39;49m[43m([49m[43mfilename[49m[43m,[49m[43m [49m[38;5;124;43m'[39;49m[38;5;124;43mwb[39;49m[38;5;124;43m'[39;49m[43m)[49m [38;5;28;01mas[39;00m f:
+[0;32m    553[0m         NumpyPickler(f, protocol[38;5;241m=[39mprotocol)[38;5;241m.[39mdump(value)
+[0;32m    554[0m [38;5;28;01melse[39;00m:
+
+[1;31mFileNotFoundError[0m: [Errno 2] No such file or directory: '.\\Experiments\\6yearsAugmented\\models\\mtl_i118_lstm8_f_o1_xyscaler.dump'
