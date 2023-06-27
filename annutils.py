@@ -507,3 +507,47 @@ def exclude(df, start_and_end):
         df = df.drop(df.loc[start:end].index)
     return df
 
+def create_training_sets_no_scaling(dfin, dfout, calib_slice=slice('1940','2015'), valid_slice=slice('1923','1939'),
+                         train_frac=None,
+                         ndays=8,window_size=11,nwindows=10,
+                         noise_sigma=0.,dropout_ratio=0.,
+                         lead_time=0,lead_freq='D' ):
+    '''
+    dfin is a dataframe that has sample (rows/timesteps) x nfeatures
+    dfout is a dataframe that has sample (rows/timesteps) x 1 label
+    Both these data frames are assumed to be indexed by time with daily timestep
+
+    This calls create_antecedent_inputs to create the CALSIM 3 way of creating antecedent information for each of the features
+
+    Returns a tuple of two pairs (tuples) of calibration and validation training set where each set consists of input and output
+    
+    '''
+    # create antecedent inputs aligned with outputs for each pair of dfin and dfout
+    dfina,dfouta=[],[]
+    
+    for dfi,dfo in zip(dfin,dfout):
+        dfi,dfo=synchronize(dfi,dfo,lead_time=lead_time,lead_freq=lead_freq)
+        dfi,dfo=pd.DataFrame(dfi,dfi.index,columns=dfi.columns),pd.DataFrame(dfo,dfo.index,columns=dfo.columns)
+        dfi,dfo=synchronize(create_antecedent_inputs(dfi,ndays=ndays,window_size=window_size,nwindows=nwindows),dfo)
+        dfina.append(dfi)
+        dfouta.append(dfo)
+    # split in calibration and validation slices
+    if train_frac is None:
+        dfins=[split(dfx,calib_slice,valid_slice) for dfx in dfina]
+        dfouts=[split(dfy,calib_slice,valid_slice) for dfy in dfouta]
+    else:
+        train_sample_index = dfina[0].sample(frac=train_frac,random_state=0).index
+        dfins=[(dfx.loc[dfx.index.isin(train_sample_index)],dfx.loc[~dfx.index.isin(train_sample_index)]) for dfx in dfina]
+        dfouts=[(dfy.loc[dfy.index.isin(train_sample_index)],dfy.loc[~dfy.index.isin(train_sample_index)]) for dfy in dfouta]
+        print('Randomly selecting %d samples for training, %d for test' % (dfins[0][0].shape[0],dfins[0][1].shape[0]))
+    
+    # append all calibration and validation slices across all input/output sets
+    xallc,xallv=dfins[0]
+    for xc,xv in dfins[1:]:
+        xallc=np.append(apply_augmentation(xallc,noise_sigma=noise_sigma,dropout_ratio=dropout_ratio),xc,axis=0)
+        xallv=np.append(xallv,xv,axis=0)
+    yallc, yallv = dfouts[0]
+    for yc,yv in dfouts[1:]:
+        yallc=np.append(yallc,yc,axis=0)
+        yallv=np.append(yallv,yv,axis=0)
+    return (xallc,yallc),(xallv,yallv)
